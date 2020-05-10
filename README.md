@@ -66,29 +66,23 @@ client
 
 Component Breakdown
 
-![Wireframe](./readmeDoc/components.png)
+![](./readmeDoc/components.png)
 
 Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 Component	Type	state	props	Description
-Header	functional	n	n	The header will contain the navigation and logo.
+Header	functional	n	n	The header will contain the logo and login.
 Navigation	functional	n	n	The navigation will provide a link to each of the pages.
-Gallery	class	y	n	The gallery will render the posts using cards in flexbox.
-Gallery Card	functional	n	y	The cards will render the post info via props.
-Footer	functional	n	n	The footer will show info about me and a link to my portfolio.
-Component Estimates
-Use this section to estimate the time necessary to build out each of the components you've described above.
-
-Task	Priority	Estimated Time	Time Invested	Actual Time
-Add Contact Form	L	3 hrs	2 hrs	3 hrs
-Create CRUD Actions	H	3 hrs	1 hrs	TBD
-TOTAL		6 hrs	3 hrs	TBD
-Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
+Main	class	y	n	The main will store/track the API recipe data and render the sections.
+HeroSection functional	n	n	The section rendering the hero image.
+PopularSection functional	n	n	The section rendering images of the popular recipes.
+JoinSection functional	n	n	The section for user login and register buttons.
+CatagorySection	functional	n	y	The section to render the recipe catagories for user to click into.
 
 
 Server (Back End)
 ERD Model
-![ERD Model](./theRecipeBox.png)
+![ERD Model](./readmeDoc/theRecipeBox.png)
 Use this section to display an image of a computer generated ERD model.
 
 Data Heirarchy
