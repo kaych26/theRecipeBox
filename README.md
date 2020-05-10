@@ -36,7 +36,7 @@ Client (Front End)
 Frontend - React
 Frontend Deployment - Netlify
 
-![Wireframe](./readmeDoc/theRecipeBox.png)
+![Wireframe](./readmeDoc/client_directory.png)
 
 
 Dummy Link
