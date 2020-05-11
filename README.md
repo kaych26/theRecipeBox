@@ -1,53 +1,42 @@
+![theRecipeBox logo](./readmeDoc/theRecipeBox_Hero.png)
+
 # theRecipeBox
 
-Overview
-Core Features
-Goals
-Team
-Permissions
-MVP
-Client (Front End)
-Wireframes
-Component Hierarchy
-Component Breakdown
-Component Estimates
-Server (Back End)
-ERD Model
-Data Heirarchy
-Data Heirarchy
-Dependencies
-Post-MVP
-Code Showcase
-Code Issues & Resolutions
+## Table of Contents
+- [Overview](#overview)
+  - [Project Team](#project-team)
+  - [Project Description](#project-description)
+  - [Core Features](#core-features)
+- [Design](#design)
+  - [Client](#client) 
+      - [Wireframes](#wireframes)
 
-Overview
-theRecipeBox is a digtial portal for individuals to upload and share their favorite recipes. During this pandemic time, many are facing challenges on what to cook for their families. This app will allow individuals to connect by sharing their recipes and cooking ideas.
 
-Core Features
+# Overview
+## Project Team
+  Created, designed, and developed by [Kay Chan](https://github.com/kaych26)
+
+## Project Description
+  theRecipeBox is a digtial portal for individuals to upload and share their favorite recipes. During this pandemic time, many are facing challenges on what to cook for their families. This app will allow individuals to connect by sharing their recipes and cooking ideas.
+
+## Core Features
 The user can browse through the recipes with or without logging in. To upload a recipe, the user will need to create a user account. The owner of the recipe has the ability to update and delete the recipe.
 
-Permissions
-Digital assets from Freepik and Unsplash. Digital assets stored locally and on Imgur.
 
-MVP
+# Design
 
-Client (Front End) - React
+## Client
+  Frontend - React
+  Frontend Deployment - Netlify
 
-Frontend - React
-Frontend Deployment - Netlify
+### Client Directory
+![ClientDirectory](./readmeDoc/client_directory.png)
 
-![Wireframe](./readmeDoc/client_directory.png)
+### Desktop Hero
+![WireframeHero](./readmeDoc/theRecipeBox_wireframe/Home_Before_Login.png)
 
-Desktop Hero
-![Wireframe](./readmeDoc/theRecipeBox_wireframe/Home_Before_Login.png)
-
-Component Hierarchy
-
-![](./readmeDoc/clientdirectory.png)
-
-Component Breakdown
-
-![](./readmeDoc/components.png)
+### Component Breakdown
+![Components](./readmeDoc/components.png)
 
 Component Type state props Description
 Header: functional n n The header will contain the logo and login.
