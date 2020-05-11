@@ -10,6 +10,7 @@
 - [Design](#design)
   - [Client](#client) 
       - [Wireframes](#wireframes)
+  - [Server](#client) 
 
 
 # Overview
@@ -25,51 +26,60 @@ The user can browse through the recipes with or without logging in. To upload a 
 
 # Design
 
-## Client
-  Frontend - React
-  Frontend Deployment - Netlify
+## Client 
+Frontend - React 
+</br>
+Frontend Deployment - Netlify
+
+### Wireframe
+![WireframeHero](./readmeDoc/theRecipeBox_wireframe1.png)
+![WireframeHero](./readmeDoc/theRecipeBox_wireframe2.png)
 
 ### Client Directory
 ![ClientDirectory](./readmeDoc/client_directory.png)
-
-### Desktop Hero
-![WireframeHero](./readmeDoc/theRecipeBox_wireframe/Home_Before_Login.png)
 
 ### Component Breakdown
 ![Components](./readmeDoc/components.png)
 
 Component Type state props Description
-Header: functional n n The header will contain the logo and login.
-Main class y n The main will store/track the API recipe data and render the sections.
-HeroSection functional n n The section rendering the hero image.
-PopularSection functional n n The section rendering images of the popular recipes.
-JoinSection functional n n The section for user login and register buttons.
-CatagorySection functional n y The section to render the recipe catagories for user to click into.
+| Component |  Type  | State | Props | Description |
+Header | functional | n | y | The header will contain the logo and login button.  The user name will be passed into header via props. |
+Main | class | y | n | The main will store/track the API recipe data and render the sections. |
+HeroSection | functional | n | n | The section rendering the hero image. |
+PopularSection | functional | n | n | The section rendering images of the popular recipes. |
+JoinSection | functional | n | n | The section for user login and register buttons. |
+CatagorySection | functional | n | y | The section to render the recipe catagories for user to click into. |
 
-Server (Back End)
+## Server
+Back End
+
+The Server will be developed using Rails
+
 ERD Model
 ![ERD Model](./readmeDoc/theRecipeBox.png)
-Use this section to display an image of a computer generated ERD model.
+
 
 database_db
 |** users/
 |** recipes/
 |\_\_ recipesInfo/
 
-Data Heirarchy
-ints from the API:
-Home/
-Home/Login
-Home/ShowRecipeList
-Home/ShowRecipeList/:id
-Home/Create
+## Data Heirarchy
+### Endpoints from the API:
+  ./Home/
+  ./Home/Login
+  ./Home/ShowRecipeList
+  ./Home/ShowRecipeList/:id
+  ./Home/Create
 
-Dependencies
-Use this section to list all supporting libraries and dependencies, and their role in the project.
+## Dependencies
 
-Library Description
-React Router
-Rails
+| Library | Description |
+| React | React Frontend |
+| React Router | |
+| CORS | Render Front End |
+| Ruby | |
+| Rails | |
 
 Post-MVP
 Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
