@@ -23,7 +23,7 @@
     - [Dependencies](#dependencies)
 - [Post MVP](#post-mvp)
 
-# Overview
+# OVERVIEW
 
 ## Project Team
 
@@ -33,15 +33,15 @@ Created, designed, and developed by [Kay Chan](https://github.com/kaych26)
 
 theRecipeBox is a digtial portal for individuals to upload and share their favorite recipes. During this pandemic time, many are facing challenges on what to cook for their families. This app will allow individuals to connect by sharing their recipes and their story.
 
-## Core Features
-
-The user can browse through the recipes with or without logging in. To upload a recipe, the user will need to create a user account. The owner of the recipe has the ability to update and delete the recipe.
-
 ## Goal
 
 The goal of this app is to allow people to get home style recipes created by other families, not chefs and allowing people with different backgrounds to connect through sharing cooking ideas and stories.
 
-# Design
+## Core Features
+
+The user can browse through the recipes with or without logging in. To upload a recipe, the user will need to create a user account. The owner of the recipe has the ability to update and delete the recipe.
+
+# DESIGN
 
 ## Client
 
@@ -118,7 +118,7 @@ Back End: The Server will be developed using Rails
 | CORS          | Render Front End  |
 | Rails         | Back End Server   |
 
-# Post-MVP
+# POST MVP
 
 ## Functions
 
