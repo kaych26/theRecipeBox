@@ -122,9 +122,10 @@ Back End: The Server will be developed using Rails
 
 ## Functions
 
-Allow logged in user to rate the recipe</br>
+Allow logged in users to give star rating for the recipes.</br>
 The popular recipe section to use the highest rated recipes </br>
 Allow user to bookmark their favorite recipes.</br>
+The search function.</br>
 
 # Code Showcase
 
