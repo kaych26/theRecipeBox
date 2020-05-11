@@ -21,7 +21,6 @@
     - [Dependencies](#dependencies)
 - [Post MVP](#post-mvp)
 
-</br>
 # Overview
 
 ## Project Team
@@ -44,34 +43,39 @@ The goal of this app is to allow people to get home style recipes created by oth
 # Design
 
 ## Client
+
 Frontend - React
 </br>
 Frontend Deployment - Netlify
 </br>
 
 ### Wireframe
+
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe1.png)
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe2.png)
 </br>
 
 ### Client Directory
+
 ![ClientDirectory](./readmeDoc/client_directory.png)
 </br>
 
 ### Component Heirarchy
+
 ![Components](./readmeDoc/components.png)
 </br>
 
 ### Component Breakdown
+
 </br>
-Component | Type | State | Props | Description
------------- | ------------- | ------------ | ------------- | ------------ |
-Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. |
-Main | class | Y | N | The main will store/track the API recipe data and render the sections. |
-HeroSection | functional | Y | N | The section rendering the hero image. |
-PopularSection | functional | N | N | The section rendering images of the popular recipes. |
-JoinSection | functional | N | Y | The section for user login and register buttons. |
-CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. |
+| Component | Type | State | Props | Description |
+| ------------ | ------------- | ------------ | ------------- | ------------------------------------- |
+| Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. |
+| Main | class | Y | N | The main will store/track the API recipe data and render the sections. |
+| HeroSection | functional | Y | N | The section rendering the hero image. |
+| PopularSection | functional | N | N | The section rendering images of the popular recipes. |
+| JoinSection | functional | N | Y | The section for user login and register buttons. |
+| CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. |
 
 ## Server
 
