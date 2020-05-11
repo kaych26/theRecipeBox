@@ -69,6 +69,7 @@ Frontend Deployment - Netlify
 
 Component | Type | State | Props | Description
 ------------ | ------------- | ------------ | ------------- | ------------ |
+Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. |
 <!-- | Component | Type | State | Props | Description |
 | ------------ | ------------- | ------------ | ------------- | ------------------------------------- |
 | Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. | -->
