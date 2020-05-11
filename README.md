@@ -1,7 +1,9 @@
 ![theRecipeBox hero](./readmeDoc/theRecipeBox_Hero.png)
 
 #
+
 ![theRecipeBox hero](./readmeDoc/theRecipeBox_logo.png)
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -39,7 +41,6 @@ The user can browse through the recipes with or without logging in. To upload a 
 
 The goal of this app is to allow people to get home style recipes created by other families, not chefs and allowing people with different backgrounds to connect through food.
 
-</br>
 # Design
 
 ## Client
