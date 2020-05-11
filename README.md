@@ -75,15 +75,13 @@ HeroSection | functional | Y | N | The section rendering the hero image. |
 PopularSection | functional | N | N | The section rendering images of the popular recipes. |
 JoinSection | functional | N | Y | The section for user login and register buttons. |
 CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. |
+ShowRecipeList | functional | N | Y | Render the list of recipes with only image and name |
+ShowOneRecipe | functional | N | Y | Render one recipe with all details |
+Login | functional | N | Y | User login, calling the method passed via props |
+Register | functional | N | Y | Create new user, calling the method passed via props |
+CreateRecipe | functional | N | Y | Create new recipe |
+UpdateDeleteRecipe | functional | N | Y | Allow user to update the recipe |
 
-<!-- | Component | Type | State | Props | Description |
-| ------------ | ------------- | ------------ | ------------- | ------------------------------------- |
-| Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. | -->
-<!-- | Main | class | Y | N | The main will store/track the API recipe data and render the sections. |
-| HeroSection | functional | Y | N | The section rendering the hero image. |
-| PopularSection | functional | N | N | The section rendering images of the popular recipes. |
-| JoinSection | functional | N | Y | The section for user login and register buttons. |
-| CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. | -->
 
 ## Server
 
@@ -120,8 +118,10 @@ The Server will be developed using Rails
 | Rails        | Back End Server  |
 
 # Post-MVP
-
-Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+## Functions
+  Allow logged in user to rate the recipe
+  The popular recipe section to use the highest rated recipe
+  Allow user to book marked their favorite recipes.
 
 # Code Showcase
 
