@@ -11,10 +11,17 @@
 - [Design](#design)
   - [Client](#client)
     - [Wireframes](#wireframes)
+    - [Client Directory](#client-directory)
+    - [Component Heirarchy](#component-heirarchy)
+    - [Component Breakdown](#component-breakdown)
   - [Server](#client)
     - [ERD Model](#erd-model)
     - [Data Heirarchy](#data-heirarchy)
+    - [API Endpoints](#api-endpoints)
+    - [Dependencies](#dependencies)
+- [Post MVP](#post-mvp)
 
+</br>
 # Overview
 
 ## Project Team
@@ -33,27 +40,29 @@ The user can browse through the recipes with or without logging in. To upload a 
 
 The goal of this app is to allow people to get home style recipes created by other families, not chefs and allowing people with different backgrounds to connect through food.
 
+</br>
 # Design
 
 ## Client
-
 Frontend - React
 </br>
 Frontend Deployment - Netlify
+</br>
 
 ### Wireframe
-
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe1.png)
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe2.png)
+</br>
 
 ### Client Directory
-
 ![ClientDirectory](./readmeDoc/client_directory.png)
+</br>
+
+### Component Heirarchy
+![Components](./readmeDoc/components.png)
+</br>
 
 ### Component Breakdown
-
-![Components](./readmeDoc/components.png)
-
 </br>
 Component | Type | State | Props | Description
 ------------ | ------------- | ------------ | ------------- | ------------ |
