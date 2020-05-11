@@ -51,7 +51,7 @@ Frontend Deployment - Netlify
 
 ### Wireframe
 
-![WireframeHero](./readmeDoc/theRecipeBox_wireframe1.png)
+![WireframeHero](./readmeDoc/theRecipeBox_wireframe1b.png)
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe2.png)
 </br>
 
