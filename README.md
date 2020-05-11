@@ -49,45 +49,43 @@ Frontend - React
 Frontend Deployment - Netlify
 </br>
 
-### Wireframe
+### Wireframes
 
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe1b.png)
+</br>
 ![WireframeHero](./readmeDoc/theRecipeBox_wireframe2.png)
 </br>
 
 ### Client Directory
 
 ![ClientDirectory](./readmeDoc/client_directory.png)
-</br>
+</br></br>
 
 ### Component Heirarchy
 
 ![Components](./readmeDoc/components.png)
-</br>
+</br></br>
 
 ### Component Breakdown
 
-Component | Type | State | Props | Description
------------- | ------------- | ------------ | ------------- | ------------ |
-Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. |
-Main | class | Y | N | The main will store/track the API recipe data and render the sections. |
-HeroSection | functional | Y | N | The section rendering the hero image. |
-PopularSection | functional | N | N | The section rendering images of the popular recipes. |
-JoinSection | functional | N | Y | The section for user login and register buttons. |
-CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. |
-ShowRecipeList | functional | N | Y | Render the list of recipes with only image and name |
-ShowOneRecipe | functional | N | Y | Render one recipe with all details |
-Login | functional | N | Y | User login, calling the method passed via props |
-Register | functional | N | Y | Create new user, calling the method passed via props |
-CreateRecipe | functional | N | Y | Create new recipe |
-UpdateDeleteRecipe | functional | N | Y | Allow user to update the recipe |
-
+| Component          | Type       | State | Props | Description                                                                                            |
+| ------------------ | ---------- | ----- | ----- | ------------------------------------------------------------------------------------------------------ |
+| Header             | functional | N     | Y     | The header will contain the logo and login button. The user name will be passed into header via props. |
+| Main               | class      | Y     | N     | The main will store/track the API recipe data and render the sections.                                 |
+| HeroSection        | functional | Y     | N     | The section rendering the hero image.                                                                  |
+| PopularSection     | functional | N     | N     | The section rendering images of the popular recipes.                                                   |
+| JoinSection        | functional | N     | Y     | The section for user login and register buttons.                                                       |
+| CatagorySection    | functional | N     | Y     | The section to render the recipe catagories for user to click into.                                    |
+| ShowRecipeList     | functional | N     | Y     | Render the list of recipes with only image and name                                                    |
+| ShowOneRecipe      | functional | N     | Y     | Render one recipe with all details                                                                     |
+| Login              | functional | N     | Y     | User login, calling the method passed via props                                                        |
+| Register           | functional | N     | Y     | Create new user, calling the method passed via props                                                   |
+| CreateRecipe       | functional | N     | Y     | Create new recipe                                                                                      |
+| UpdateDeleteRecipe | functional | N     | Y     | Allow user to update the recipe                                                                        |
 
 ## Server
 
-Back End
-
-The Server will be developed using Rails
+Back End: The Server will be developed using Rails
 
 ### ERD Model
 
@@ -118,10 +116,12 @@ The Server will be developed using Rails
 | Rails        | Back End Server  |
 
 # Post-MVP
+
 ## Functions
-  Allow logged in user to rate the recipe
-  The popular recipe section to use the highest rated recipe
-  Allow user to book marked their favorite recipes.
+
+Allow logged in user to rate the recipe</br>
+The popular recipe section to use the highest rated recipes </br>
+Allow user to bookmark their favorite recipes.</br>
 
 # Code Showcase
 
