@@ -55,14 +55,14 @@ Frontend Deployment - Netlify
 ![Components](./readmeDoc/components.png)
 
 </br>
-Component |  Type  | State | Props | Description
+Component | Type | State | Props | Description
 ------------ | ------------- | ------------ | ------------- | ------------ |
-Header | functional | n | y | The header will contain the logo and login button.  The user name will be passed into header via props. |
-Main | class | y | n | The main will store/track the API recipe data and render the sections. |
-HeroSection | functional | n | n | The section rendering the hero image. |
-PopularSection | functional | n | n | The section rendering images of the popular recipes. |
-JoinSection | functional | n | n | The section for user login and register buttons. |
-CatagorySection | functional | n | y | The section to render the recipe catagories for user to click into. |
+Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. |
+Main | class | Y | N | The main will store/track the API recipe data and render the sections. |
+HeroSection | functional | Y | N | The section rendering the hero image. |
+PopularSection | functional | N | N | The section rendering images of the popular recipes. |
+JoinSection | functional | N | Y | The section for user login and register buttons. |
+CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. |
 
 ## Server
 
@@ -76,23 +76,27 @@ The Server will be developed using Rails
 
 ### Data Heirarchy
 
-#### Endpoints from the API:
+#### API Endpoints:
 
 ./Home/
+</br>
 ./Home/Login
+</br>
 ./Home/ShowRecipeList
+</br>
 ./Home/ShowRecipeList/:id
+</br>
 ./Home/Create
+</br>
 
 ### Dependencies
 
-| Library      | Description      |
+| Library      | Purpose          |
 | ------------ | ---------------- |
-| React        | React Frontend   |
-| React Router |                  |
+| React        | Render Front End |
+| React Router | Render Front End |
 | CORS         | Render Front End |
-| Ruby         |                  |
-| Rails        |                  |
+| Rails        | Back End Server  |
 
 # Post-MVP
 
