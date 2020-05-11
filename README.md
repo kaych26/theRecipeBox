@@ -1,7 +1,7 @@
-![theRecipeBox logo](./readmeDoc/theRecipeBox_Hero.png)
+![theRecipeBox hero](./readmeDoc/theRecipeBox_Hero.png)
 
-# theRecipeBox
-
+#
+![theRecipeBox hero](./readmeDoc/theRecipeBox_logo.png)
 ## Table of Contents
 
 - [Overview](#overview)
