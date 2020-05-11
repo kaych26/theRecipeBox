@@ -73,7 +73,7 @@ Frontend Deployment - Netlify
 | ------------------ | ---------- | ----- | ----- | ------------------------------------------------------------------------------------------------------ |
 | Header             | functional | N     | Y     | The header will contain the logo and login button. The user name will be passed into header via props. |
 | Main               | class      | Y     | N     | The main will store/track the API recipe data and render the sections.                                 |
-| HeroSection        | functional | Y     | N     | The section rendering the hero image.                                                                  |
+| HeroSection        | functional | N     | N     | The section rendering the hero image.                                                                  |
 | PopularSection     | functional | N     | N     | The section rendering images of the popular recipes.                                                   |
 | JoinSection        | functional | N     | Y     | The section for user login and register buttons.                                                       |
 | CatagorySection    | functional | N     | Y     | The section to render the recipe catagories for user to click into.                                    |
@@ -82,7 +82,7 @@ Frontend Deployment - Netlify
 | Login              | functional | N     | Y     | User login, calling the method passed via props                                                        |
 | Register           | functional | N     | Y     | Create new user, calling the method passed via props                                                   |
 | CreateRecipe       | functional | N     | Y     | Create new recipe                                                                                      |
-| UpdateDeleteRecipe | functional | N     | Y     | Allow user to update the recipe                                                                        |
+| UpdateDeleteRecipe | functional | N     | Y     | Allow user to update the recipe and story                                                              |
 
 ## Server
 
