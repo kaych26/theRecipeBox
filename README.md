@@ -70,6 +70,12 @@ Frontend Deployment - Netlify
 Component | Type | State | Props | Description
 ------------ | ------------- | ------------ | ------------- | ------------ |
 Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. |
+Main | class | Y | N | The main will store/track the API recipe data and render the sections. |
+HeroSection | functional | Y | N | The section rendering the hero image. |
+PopularSection | functional | N | N | The section rendering images of the popular recipes. |
+JoinSection | functional | N | Y | The section for user login and register buttons. |
+CatagorySection | functional | N | Y | The section to render the recipe catagories for user to click into. |
+
 <!-- | Component | Type | State | Props | Description |
 | ------------ | ------------- | ------------ | ------------- | ------------------------------------- |
 | Header | functional | N | Y | The header will contain the logo and login button.  The user name will be passed into header via props. | -->
