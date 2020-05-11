@@ -31,7 +31,7 @@ Created, designed, and developed by [Kay Chan](https://github.com/kaych26)
 
 ## Project Description
 
-theRecipeBox is a digtial portal for individuals to upload and share their favorite recipes. During this pandemic time, many are facing challenges on what to cook for their families. This app will allow individuals to connect by sharing their recipes and cooking ideas.
+theRecipeBox is a digtial portal for individuals to upload and share their favorite recipes. During this pandemic time, many are facing challenges on what to cook for their families. This app will allow individuals to connect by sharing their recipes and their story.
 
 ## Core Features
 
