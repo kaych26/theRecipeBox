@@ -39,7 +39,7 @@ The user can browse through the recipes with or without logging in. To upload a 
 
 ## Goal
 
-The goal of this app is to allow people to get home style recipes created by other families, not chefs and allowing people with different backgrounds to connect through food.
+The goal of this app is to allow people to get home style recipes created by other families, not chefs and allowing people with different backgrounds to connect through sharing cooking ideas and stories.
 
 # Design
 
