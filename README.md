@@ -109,12 +109,14 @@ Back End: The Server will be developed using Rails
 
 ### Dependencies
 
-| Library      | Purpose          |
-| ------------ | ---------------- |
-| React        | Render Front End |
-| React Router | Render Front End |
-| CORS         | Render Front End |
-| Rails        | Back End Server  |
+| Library       | Purpose           |
+| ------------- | ----------------- |
+| React         | Render Front End  |
+| React Router  | Link and Route    |
+| axios         | API calls         |
+| Framer-motion | Smooth transition |
+| CORS          | Render Front End  |
+| Rails         | Back End Server   |
 
 # Post-MVP
 
