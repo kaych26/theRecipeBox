@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Hero from '../Hero';
 
 export default class Register extends Component {
   state = {
@@ -17,6 +18,8 @@ export default class Register extends Component {
   render() {
     const { username, email, password } = this.state;
     return (
+      <>
+      <Hero />
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -53,7 +56,8 @@ export default class Register extends Component {
         />
         <br />
         <button>Submit</button>
-      </form>
+        </form>
+        </>
     );
   }
 }

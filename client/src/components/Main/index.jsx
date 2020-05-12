@@ -12,6 +12,7 @@ import {
 } from '../../services/api-helper';
 import ShowCategories from '../ShowCategories';
 import ShowRecipes from '../ShowRecipes';
+import Hero from '../Hero';
 // import CreateFood from './CreateFood';
 // import UpdateFood from './UpdateFood';
 // import FoodItem from './FoodItem';
@@ -23,12 +24,15 @@ export default class Main extends Component {
   };
 
   componentDidMount() {
+    // debugger
     this.readAllCategories();
     this.readAllRecipes();
   }
 
   readAllCategories = async () => {
+    debugger;
     const categories = await getAllCategories();
+    debugger;
     this.setState({ categories });
   };
 
@@ -63,6 +67,7 @@ export default class Main extends Component {
   };
 
   render() {
+    debugger
     return (
       <main>
         <Route
@@ -77,11 +82,16 @@ export default class Main extends Component {
             <Register {...props} handleRegister={this.props.handleRegister} />
           )}
         />
+        <Route exact path="/">
+          <Hero />
+          <ShowCategories categories={this.state.categories} />
+        </Route>
+
         <Route
           path="/categories"
-          render={() => <ShowCategories flavors={this.state.categories} />}
+          render={() => <ShowCategories categories={this.state.categories} />}
         />
-        <Route
+        {/* <Route
           exact
           path="/recipes"
           render={(props) => (
@@ -91,7 +101,7 @@ export default class Main extends Component {
               foods={this.state.foods}
             />
           )}
-        />
+        /> */}
         {/* <Route
           path="/recipes/new"
           render={(props) => (

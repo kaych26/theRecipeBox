@@ -1,22 +1,7 @@
-// import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import React, { useState } from 'react';
-// import styled from 'styled-components';
-
-// export default function Login() {
-//   const [username, name, email, password] = useState('');
-
-//   handleChange = (e) => {
-//     const { name, value } = e.target;
-//     name(value);
-//     // this.setState({
-//     //   [name]: value
-//     // });
-//   };
-// }
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
+import Hero from '../Hero';
 
 export default class Login extends Component {
   state = {
@@ -37,6 +22,7 @@ export default class Login extends Component {
     const { username, email, password } = this.state;
     return (
       <>
+      <Hero />
       <Link to="/register">register</Link>
       <form
         onSubmit={(e) => {

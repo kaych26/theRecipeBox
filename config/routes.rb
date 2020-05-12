@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   
-  # resources :categories, only: :index
-  # get '/categories/:category_id/recipe/:id', to: 'recipes#add_recipe'
-  # post '/recipes/create', to: 'recipes#create'
-  # resources :recipes
+  resources :categories, only: :index
+  get '/categories/:category_id/recipe/:id', to: 'recipes#add_recipe'
+  post '/recipes/create', to: 'recipes#create'
+  resources :recipes
   
   
   #  ================ AUTH ======================

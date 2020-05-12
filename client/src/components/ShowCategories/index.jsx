@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function ShowCategories(props) {
+  debugger
   return (
     <div>
       <h3>Categories</h3>
