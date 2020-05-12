@@ -10,6 +10,7 @@ import {
 
 import GlobalStyle from './components/GlobalStyle';
 import Header from './components/Header';
+import Main from './components/Main';
 import Hero from './components/Hero';
 
 class App extends Component {
@@ -49,8 +50,15 @@ class App extends Component {
     return (
       <>
         <GlobalStyle />
-        <Header />
-       
+
+        <Header
+          handleLogout={this.handleLogout}
+          currentUser={this.state.currentUser}
+        />
+        <Main
+          handleRegister={this.handleRegister}
+          handleLogin={this.handleLogin}
+        />
       </>
       // {<div className="App">
       //   <Header

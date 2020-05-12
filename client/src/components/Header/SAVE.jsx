@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../assets/images/img/theRecipeBox_logo.png';
+import { Link } from 'react-router-dom';
 
 const StyledHeader = styled.header`
   height: 60px;
@@ -17,13 +18,21 @@ const Logo = styled.img`
 
 const Nav = styled.nav`
   font-size: 36px;
+  text-decoration: none;
 `;
 
-export default function Header() {
-  return (
-    <StyledHeader>
-      <Logo src={logo}/>
-      <Nav>Login</Nav>
-    </StyledHeader>
-  );
-}
+const StyledLink = styled(Link)`
+text-decoration: none;
+`;
+
+
+// export default function HeaderSave({ handleLogout, currentUser }) {
+  
+//   return (
+//     <StyledHeader>
+//       <Logo src={logo} />
+//       <Nav>
+//       <Link to="/login">Login</Link></Nav>
+//     </StyledHeader>
+//   );
+// }
