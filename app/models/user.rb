@@ -12,12 +12,10 @@ class User < ApplicationRecord
   def return_data
     {
       id: id,
-      name: name,
       username: username,
       email: email,
       created_at: created_at,
       updated_at: updated_at
     }
   end
-
 end

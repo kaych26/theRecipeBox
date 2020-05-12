@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :update, :destroy]
-  before_action :authorize_request, only: [:create, :update, :destroy]
+  # before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /recipes
   def index
@@ -38,6 +38,13 @@ class RecipesController < ApplicationController
   def destroy
     @recipe.destroy
   end
+
+  # def add_recipe
+  #   @category = Category.find(params[:category_id])
+  #   @food.flavors << @flavor
+  #   render json: @food, include: :flavors
+  # end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

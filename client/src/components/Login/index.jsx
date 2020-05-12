@@ -21,7 +21,6 @@ import { Link } from 'react-router-dom';
 export default class Login extends Component {
   state = {
     username: '',
-    name: '',
     email: '',
     password: '',
   };
@@ -35,7 +34,7 @@ export default class Login extends Component {
 
   render() {
     // debugger
-    const { username, name, email, password } = this.state;
+    const { username, email, password } = this.state;
     return (
       <>
       <Link to="/register">register</Link>
@@ -55,15 +54,6 @@ export default class Login extends Component {
           value={username}
           onChange={this.handleChange}
         />
-        <br />
-        {/* <label htmlFor="name">name:</label>
-        <input
-          id="name"
-          type="text"
-          name="name"
-          value={name}
-          onChange={this.handleChange}
-        /> */}
         <br />
         <label htmlFor="email">email:</label>
         <input

@@ -10,14 +10,15 @@
 #Recipe.destroy_all
 # Category.destroy_all
 
-# User.create(username:"admin", name:"kay", email: "admin@mail.com", password: "123456")
-# p "#{User.count} user(s) created"
+User.create(username:"a", email: "a@m.com", password: "123456")
+User.create(username:"admin", email: "admin@mail.com", password: "123456")
+p "#{User.count} user(s) created"
 
 
-# dinner = Category.create(group: "dinner", subgroup: "dinner", image: "./assets/images/img/dinner_category.jpg")
-# dessert = Category.create(group: "dessert", subgroup: "dessert", image: "./assets/images/img/dessert_category.jpeg")
+dinner = Category.create(group: "dinner", subgroup: "dinner", image: "./assets/images/img/dinner_category.jpg")
+dessert = Category.create(group: "dessert", subgroup: "dessert", image: "./assets/images/img/dessert_category.jpeg")
 
-# p "#{Category.count} category created"
+p "#{Category.count} category created"
 
 
 chicken = Recipe.create(
@@ -40,7 +41,8 @@ Serve salmon immediately with honey ginger glaze.sauce, rice vinegar, sesame oil
 In a gallon size Ziploc bag or large bowl, combine ginger marinade and salmon filets; marinate for at least 30 minutes to overnight, turning the bag occasionally.
 Preheat oven to 400 degrees F. Lightly coat a 9×13 baking dish with nonstick spray.
 Place salmon filets along with the marinade onto prepared baking dish and bake until the fish flakes easily with a fork, about 20 minutes.
-Serve salmon immediately with honey ginger glaze.", story: "I am Annie and I enjoy cooking", user_id: 8, category_id: 8)
+Serve salmon immediately with honey ginger glaze.", story: "I am Annie and I enjoy cooking", 
+user_id: 1, category_id: 1)
 
 p "#{Recipe.count} recipes created"
 
