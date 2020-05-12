@@ -1,0 +1,12 @@
+      invoke  active_record
+      create    db/migrate/20200511194918_create_categories.rb
+      create    app/models/category.rb
+      invoke    test_unit
+      create      test/models/category_test.rb
+      create      test/fixtures/categories.yml
+      invoke  resource_route
+       route    resources :categories
+      invoke  scaffold_controller
+      create    app/controllers/categories_controller.rb
+      invoke    test_unit
+      create      test/controllers/categories_controller_test.rb
