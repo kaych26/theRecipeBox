@@ -134,7 +134,7 @@ export default class Main extends Component {
             return (
               <UpdateRecipe
                 {...props}
-                handleFoodUpdate={this.handleFoodUpdate}
+                handleRecipeUpdate={this.handleRecipeUpdate}
                 recipeId={id}
               />
             );

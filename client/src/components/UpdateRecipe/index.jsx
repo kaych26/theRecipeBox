@@ -16,14 +16,14 @@ export default class UpdateRecipe extends Component {
 
   handleChange = (e) => {
     const { value } = e.target;
+    // const { name, image, prep_time, ingredient, direction, story} = e.target;
     this.setState({
-    
       name: value,
-      // image: image_value,
-      // prep_time: prep_time_value,
-      // ingredient: ingredient_value,
-      // direction: direction_value,
-      // story: story_value,
+      // image: image,
+      // prep_time: prep_time,
+      // ingredient: ingredient,
+      // direction: direction,
+      // story: story,
       // group_id: group_id_value,
       // user_id: user_id_value,
       // category_id: category_id_value,
@@ -35,7 +35,7 @@ export default class UpdateRecipe extends Component {
   }
 
   setFormData = async () => {
-    const recipe = await getOneRecipe(this.props.foodId);
+    const recipe = await getOneRecipe(this.props.recipeId);
     this.setState({
       name: recipe.name,
       image: recipe.image,
@@ -51,22 +51,46 @@ export default class UpdateRecipe extends Component {
 
   render() {
     return (
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          this.props.handleRecipeUpdate(this.props.RecipeId, this.state);
-          this.props.history.push('/recipes');
-        }}
-      >
+      <>
         <h3>Update Food</h3>
-        <input
-          type="text"
-          value={this.state.name}
-          onChange={this.handleChange}
-        />
+        <img src={this.state.image} />
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            this.props.handleRecipeUpdate(this.props.RecipeId, this.state);
+            this.props.history.push(`/recipes/${this.props.recipeId}`);
+          }}
+        >
+          <input
+            type="text"
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
 
-        <button>Submit</button>
-      </form>
+          {/* <input
+            type="text"
+            value={this.state.prep_time}
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            value={this.state.ingredient}
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            value={this.state.direction}
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            value={this.state.story}
+            onChange={this.handleChange}
+          /> */}
+
+          <button>Submit</button>
+        </form>
+      </>
     );
   }
 }
