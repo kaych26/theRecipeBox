@@ -6,6 +6,8 @@ import Register from '../Register';
 import {
   getAllCategories,
   getAllRecipes,
+  getDinnerRecipes,
+  getDessertRecipes,
   postRecipe,
   putRecipe,
   destroyRecipe,
@@ -21,11 +23,14 @@ export default class Main extends Component {
   state = {
     categories: [],
     recipes: [],
+    dinner_recipes: [],
+    dessert_recipes: [],
   };
 
   componentDidMount() {
-    // debugger
     this.readAllCategories();
+    this.readDinnerRecipes();
+    this.readDessertRecipes();
     this.readAllRecipes();
   }
 
@@ -38,6 +43,16 @@ export default class Main extends Component {
   readAllRecipes = async () => {
     const recipes = await getAllRecipes();
     this.setState({ recipes });
+  };
+
+  readDinnerRecipes = async () => {
+    // debugger
+    const dinner_recipes = await getDinnerRecipes();
+    this.setState({ dinner_recipes });
+  };
+  readDessertRecipes = async () => {
+    const dessert_recipes = await getDessertRecipes();
+    this.setState({ dessert_recipes });
   };
 
   handleRecipeSubmit = async (recipeData) => {
@@ -88,13 +103,23 @@ export default class Main extends Component {
         </Route>
 
         <Route
+          path="/dinner"
+          render={routerProps => (
+            <ShowRecipes recipes={this.state.dinner_recipes} />
+          )}
+        />
+        <Route
+          path="/dessert"
+          render={routerProps => (
+            <ShowRecipes recipes={this.state.dessert_recipes} />
+          )}
+        />
+        {/* <Route
           path="/:categories"
           render={routerProps => (
             <ShowRecipes recipes={this.state.recipes} {...routerProps} />
           )}
-
-          // render={() => <ShowCategories categories={this.state.categories} />}
-        />
+        /> */}
         {/* <Route
           path="/categories"
           render={() => <ShowCategories categories={this.state.categories} />}

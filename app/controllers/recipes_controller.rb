@@ -2,16 +2,28 @@ class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :update, :destroy]
   # before_action :authorize_request, only: [:create, :update, :destroy]
 
+  
   # GET /recipes
   def index
     @recipes = Recipe.all
-
+    
     render json: @recipes
   end
-
+  
   # GET /recipes/1
   def show
     render json: @recipe
+  end
+
+  def get_dinner_recipes
+    # @dinner_recipes = Recipe.all
+    @dinner_recipes = Recipe.where(category_id: '1').all
+    render json: @dinner_recipes
+  end
+  
+  def get_dessert_recipes
+    @dessert_recipes = Recipe.where(category_id: '2').all
+    render json: @dessert_recipes
   end
 
   # POST /recipes

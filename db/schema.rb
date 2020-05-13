@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2020_05_11_195259) do
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
+    t.string "group_id"
     t.string "group"
-    t.string "subgroup"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_05_11_195259) do
     t.text "ingredient"
     t.text "direction"
     t.text "story"
+    t.string "group_id"
     t.bigint "user_id", null: false
     t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false

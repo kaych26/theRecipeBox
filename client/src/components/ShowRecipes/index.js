@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function ShowRecipes(props) {
-  debugger
+  // debugger
   return (
     <div>
       <h3>Recipes</h3>
-      {props.recipes.map(recipe => (
+
+      { 
+        props.recipes.map(recipe => (
         <React.Fragment key={recipe.id}>
           <Link to={`/recipes/${recipe.id}`}>{recipe.name}</Link>
           <button onClick={() => {

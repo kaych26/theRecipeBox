@@ -7,6 +7,7 @@ class CreateRecipes < ActiveRecord::Migration[6.0]
       t.text :ingredient
       t.text :direction
       t.text :story
+      t.string :group_id
       t.references :user, null: false, foreign_key: true
       t.references :category, null: false, foreign_key: true
 
