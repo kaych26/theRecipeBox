@@ -12,10 +12,11 @@ import {
   putRecipe,
   destroyRecipe,
 } from '../../services/api-helper';
+import Hero from '../Hero';
 import ShowCategories from '../ShowCategories';
 import ShowRecipes from '../ShowRecipes';
 import OneRecipe from '../OneRecipe';
-import Hero from '../Hero';
+import UpdateRecipe from '../UpdateRecipe';
 // import CreateFood from './CreateFood';
 // import UpdateFood from './UpdateFood';
 // import FoodItem from './FoodItem';
@@ -27,7 +28,6 @@ export default class Main extends Component {
     dinner_recipes: [],
     dessert_recipes: [],
   };
-
 
   componentDidMount() {
     // this.props.confirmUser();
@@ -72,8 +72,6 @@ export default class Main extends Component {
     }));
   };
 
-
-
   handleRecipeDelete = async (id) => {
     await destroyRecipe(id);
     this.setState((prevState) => ({
@@ -117,17 +115,30 @@ export default class Main extends Component {
             <ShowRecipes recipes={this.state.dessert_recipes} />
           )}
         />
-        
+
         <Route
           exact
           path="/recipes/:id"
           render={(props) => (
-           
             <OneRecipe
               {...props}
-              handleRecipeDelete={this.handleRecipeDelete} />
-            
+              handleRecipeDelete={this.handleRecipeDelete}
+            />
           )}
+        />
+
+        <Route
+          path="/recipes/:id/edit"
+          render={(props) => {
+            const { id } = props.match.params;
+            return (
+              <UpdateRecipe
+                {...props}
+                handleFoodUpdate={this.handleFoodUpdate}
+                recipeId={id}
+              />
+            );
+          }}
         />
 
         {/* <Route

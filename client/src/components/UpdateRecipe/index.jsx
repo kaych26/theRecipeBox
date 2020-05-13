@@ -1,5 +1,5 @@
-import React from 'react';
-import { getOneFood } from '../serives/api-helper';
+import React, { Component } from 'react';
+import { getOneRecipe } from '../../services/api-helper';
 
 export default class UpdateRecipe extends Component {
   state = {
@@ -17,15 +17,16 @@ export default class UpdateRecipe extends Component {
   handleChange = (e) => {
     const { value } = e.target;
     this.setState({
-      name: name_value,
-      image: image_value,
-      prep_time: prep_time_value,
-      ingredient: ingredient_value,
-      direction: direction_value,
-      story: story_value,
-      group_id: group_id_value,
-      user_id: user_id_value,
-      category_id: category_id_value,
+    
+      name: value,
+      // image: image_value,
+      // prep_time: prep_time_value,
+      // ingredient: ingredient_value,
+      // direction: direction_value,
+      // story: story_value,
+      // group_id: group_id_value,
+      // user_id: user_id_value,
+      // category_id: category_id_value,
     });
   };
 
@@ -55,17 +56,16 @@ export default class UpdateRecipe extends Component {
           e.preventDefault();
           this.props.handleRecipeUpdate(this.props.RecipeId, this.state);
           this.props.history.push('/recipes');
-        }}>
-
+        }}
+      >
         <h3>Update Food</h3>
         <input
           type="text"
           value={this.state.name}
           onChange={this.handleChange}
         />
-        
-        <button>Submit</button>
 
+        <button>Submit</button>
       </form>
     );
   }
