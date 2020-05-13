@@ -16,7 +16,6 @@ class RecipesController < ApplicationController
   end
 
   def get_dinner_recipes
-    # @dinner_recipes = Recipe.all
     @dinner_recipes = Recipe.where(category_id: '1').all
     render json: @dinner_recipes
   end
@@ -25,6 +24,12 @@ class RecipesController < ApplicationController
     @dessert_recipes = Recipe.where(category_id: '2').all
     render json: @dessert_recipes
   end
+
+  def get_one_recipe
+    
+  end
+
+  
 
   # POST /recipes
   def create

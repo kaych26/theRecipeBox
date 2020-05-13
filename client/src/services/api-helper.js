@@ -64,7 +64,7 @@ export const getDessertRecipes = async () => {
   return resp.data;
 }
 
-export const getOneRecipes = async () => {
+export const getOneRecipe = async () => {
   const resp = await api.get('/recipes/${id}');
   return resp.data;
 }

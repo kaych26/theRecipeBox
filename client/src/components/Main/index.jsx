@@ -14,6 +14,7 @@ import {
 } from '../../services/api-helper';
 import ShowCategories from '../ShowCategories';
 import ShowRecipes from '../ShowRecipes';
+import OneRecipe from '../OneRecipe';
 import Hero from '../Hero';
 // import CreateFood from './CreateFood';
 // import UpdateFood from './UpdateFood';
@@ -35,7 +36,6 @@ export default class Main extends Component {
   }
 
   readAllCategories = async () => {
-  
     const categories = await getAllCategories();
     this.setState({ categories });
   };
@@ -81,7 +81,6 @@ export default class Main extends Component {
   };
 
   render() {
-  
     return (
       <main>
         <Route
@@ -98,30 +97,32 @@ export default class Main extends Component {
         />
         <Route exact path="/">
           <Hero />
-          {this.state.categories &&
-            <ShowCategories categories={this.state.categories} />}
+          {this.state.categories && (
+            <ShowCategories categories={this.state.categories} />
+          )}
         </Route>
 
         <Route
           path="/dinner"
-          render={routerProps => (
+          render={(routerProps) => (
             <ShowRecipes recipes={this.state.dinner_recipes} />
           )}
         />
         <Route
           path="/dessert"
-          render={routerProps => (
+          render={(routerProps) => (
             <ShowRecipes recipes={this.state.dessert_recipes} />
           )}
         />
-        {/* <Route exact path='/recipes/:id' render={(props) => {
-          const { id } = props.match.params
-          return <RecipeItem
-            RecipeId={id}
-            flavors={this.state.flavors}
-          />
-        }
-        } */}
+        <Route
+          exact
+          path="/recipes/:id"
+          render={(props) => {
+            const { id } = props.match.params;
+            return <OneRecipe RecipeId={id} recipes={this.state.recipes} />;
+          }}
+        />
+
         {/* <Route
           path="/:categories"
           render={routerProps => (
