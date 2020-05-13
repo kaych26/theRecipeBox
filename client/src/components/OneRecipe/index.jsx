@@ -38,13 +38,16 @@ export default class OneRecipe extends Component {
     const { recipe } = this.state;
     return (
       <div>
-            <h1>I am here </h1>
         {recipe && (
           <>
+            <img src={recipe.image} alt={recipe.name}/>
             <h3>
               {recipe.name}
               {recipe.prep_time}
             </h3>
+            <p>{recipe.ingredient}</p>
+            <p>{recipe.direction}</p>
+            <p>{recipe.story}</p>
           </>
         )}
       </div>

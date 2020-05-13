@@ -1,5 +1,5 @@
 class AuthenticationController < ApplicationController
-# before_action :authorize_request, except: :login
+  before_action :authorize_request, except: :login
 
   # POST /auth/login
   def login
@@ -16,6 +16,16 @@ class AuthenticationController < ApplicationController
   
   # GET /auth/verify
   def verify
+    # def return_data
+    #   {
+    #     id: id,
+    #     username: username,
+    #     email: email,
+    #     created_at: created_at,
+    #     updated_at: updated_at
+    #   }
+    # end
+    
     render json: @current_user.return_data, status: :ok
   end
 

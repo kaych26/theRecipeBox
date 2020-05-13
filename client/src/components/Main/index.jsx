@@ -28,7 +28,9 @@ export default class Main extends Component {
     dessert_recipes: [],
   };
 
+
   componentDidMount() {
+    // this.props.confirmUser();
     this.readAllCategories();
     this.readDinnerRecipes();
     this.readDessertRecipes();

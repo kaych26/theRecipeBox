@@ -32,7 +32,9 @@ class App extends Component {
 
   confirmUser = async () => {
     const currentUser = await verifyUser();
+    
     this.setState({ currentUser })
+
   }
 
   handleLogout = () => {
@@ -52,8 +54,10 @@ class App extends Component {
           currentUser={this.state.currentUser}
         />
         <Main
+          currentUser={this.state.currentUser}
           handleRegister={this.handleRegister}
           handleLogin={this.handleLogin}
+          confirmUser={this.confirmUser}
         />
       </div>
     )

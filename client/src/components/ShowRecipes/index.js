@@ -13,7 +13,7 @@ export default function ShowRecipes(props) {
             {recipe.name}
             <img className="recipe-img" src={recipe.image} />
           </Link>
-          <button
+          {/* <button
             onClick={() => {
               props.history.push(`/recipes/${recipe.id}/edit`);
             }}
@@ -26,7 +26,7 @@ export default function ShowRecipes(props) {
             }}
           >
             Delete
-          </button>
+          </button> */}
           <br />
         </React.Fragment>
       ))}
