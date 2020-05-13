@@ -2,16 +2,6 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import { getOneRecipe } from '../../services/api-helper';
 
-// t.string "name"
-//     t.string "image"
-//     t.string "prep_time"
-//     t.text "ingredient"
-//     t.text "direction"
-//     t.text "story"
-//     t.string "group_id"
-//     t.bigint "user_id", null: false
-// t.bigint "category_id", null: false
-
 export default class OneRecipe extends Component {
   state = {
     name: '',
@@ -36,11 +26,28 @@ export default class OneRecipe extends Component {
 
   render() {
     const { recipe } = this.state;
+
     return (
       <div>
         {recipe && (
           <>
-            <img src={recipe.image} alt={recipe.name}/>
+            <img src={recipe.image} alt={recipe.name} />
+            <button
+              onClick={() => {
+                this.props.history.push(`/recipes/${recipe.id}/edit`);
+              }}
+            >
+              Edit
+            </button>
+            <button
+              onClick={() => {
+                this.props.handleRecipeDelete(`${recipe.id}`);
+                this.props.history.push('/');
+              }}
+            >
+              Delete
+            </button>
+
             <h3>
               {recipe.name}
               {recipe.prep_time}

@@ -48,7 +48,6 @@ export default class Main extends Component {
   };
 
   readDinnerRecipes = async () => {
-    // debugger
     const dinner_recipes = await getDinnerRecipes();
     this.setState({ dinner_recipes });
   };
@@ -72,6 +71,8 @@ export default class Main extends Component {
       }),
     }));
   };
+
+
 
   handleRecipeDelete = async (id) => {
     await destroyRecipe(id);
@@ -116,13 +117,17 @@ export default class Main extends Component {
             <ShowRecipes recipes={this.state.dessert_recipes} />
           )}
         />
+        
         <Route
           exact
           path="/recipes/:id"
-          render={(props) => {
-            // const { id } = props.match.params;
-            return <OneRecipe {...props} recipeId={props.match.params.id} recipes={this.state.recipes} />;
-          }}
+          render={(props) => (
+           
+            <OneRecipe
+              {...props}
+              handleRecipeDelete={this.handleRecipeDelete} />
+            
+          )}
         />
 
         {/* <Route
