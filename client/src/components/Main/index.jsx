@@ -114,6 +114,14 @@ export default class Main extends Component {
             <ShowRecipes recipes={this.state.dessert_recipes} />
           )}
         />
+        {/* <Route exact path='/recipes/:id' render={(props) => {
+          const { id } = props.match.params
+          return <RecipeItem
+            RecipeId={id}
+            flavors={this.state.flavors}
+          />
+        }
+        } */}
         {/* <Route
           path="/:categories"
           render={routerProps => (
