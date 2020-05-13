@@ -19,7 +19,6 @@ top: 280px;
 `;
 
 
-
 export default function Hero() {
   return <StyledHero>
     <Title>Share your favorite Recipes & Cooking Tips</Title>

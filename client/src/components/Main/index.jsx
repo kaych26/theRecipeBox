@@ -30,9 +30,8 @@ export default class Main extends Component {
   }
 
   readAllCategories = async () => {
-    debugger;
+  
     const categories = await getAllCategories();
-    debugger;
     this.setState({ categories });
   };
 
@@ -67,7 +66,7 @@ export default class Main extends Component {
   };
 
   render() {
-    debugger
+  
     return (
       <main>
         <Route
@@ -84,13 +83,22 @@ export default class Main extends Component {
         />
         <Route exact path="/">
           <Hero />
-          <ShowCategories categories={this.state.categories} />
+          {this.state.categories &&
+            <ShowCategories categories={this.state.categories} />}
         </Route>
 
         <Route
+          path="/:categories"
+          render={routerProps => (
+            <ShowRecipes recipes={this.state.recipes} {...routerProps} />
+          )}
+
+          // render={() => <ShowCategories categories={this.state.categories} />}
+        />
+        {/* <Route
           path="/categories"
           render={() => <ShowCategories categories={this.state.categories} />}
-        />
+        /> */}
         {/* <Route
           exact
           path="/recipes"

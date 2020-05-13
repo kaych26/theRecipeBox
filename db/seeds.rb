@@ -15,8 +15,8 @@ User.create(username:"admin", email: "admin@mail.com", password: "123456")
 p "#{User.count} user(s) created"
 
 
-dinner = Category.create(group: "dinner", subgroup: "dinner", image: "./assets/images/img/dinner_category.jpg")
-dessert = Category.create(group: "dessert", subgroup: "dessert", image: "./assets/images/img/dessert_category.jpeg")
+dinner = Category.create(group: "dinner", subgroup: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg")
+dessert = Category.create(group: "dessert", subgroup: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg")
 
 p "#{Category.count} category created"
 

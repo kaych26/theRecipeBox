@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router';
-import './App.css'
+// import './App.css'
 
 import Header from './components/Header';
 import Main from './components/Main';

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function ShowRecipes(props) {
+  debugger
   return (
     <div>
       <h3>Recipes</h3>
