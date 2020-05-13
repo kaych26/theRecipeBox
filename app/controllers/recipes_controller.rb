@@ -12,6 +12,7 @@ class RecipesController < ApplicationController
   
   # GET /recipes/1
   def show
+    # @recipe = Recipe.find(params[:id])
     render json: @recipe
   end
 
@@ -23,10 +24,6 @@ class RecipesController < ApplicationController
   def get_dessert_recipes
     @dessert_recipes = Recipe.where(category_id: '2').all
     render json: @dessert_recipes
-  end
-
-  def get_one_recipe
-    
   end
 
   
@@ -66,6 +63,7 @@ class RecipesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
+      # @recipe = Recipe.find('1')
       @recipe = Recipe.find(params[:id])
     end
 

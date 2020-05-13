@@ -26,13 +26,11 @@ export default class OneRecipe extends Component {
   };
 
   componentDidMount() {
-    this.setRecipe();
+    this.setRecipe(this.props.match.params.id);
   }
 
-  setRecipe = async () => {
-
-    debugger;
-    const recipe = await getOneRecipe(this.props.recipeId);
+  setRecipe = async (id) => {
+    const recipe = await getOneRecipe(id);
     this.setState({ recipe });
   };
 

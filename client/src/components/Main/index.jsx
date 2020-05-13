@@ -118,8 +118,8 @@ export default class Main extends Component {
           exact
           path="/recipes/:id"
           render={(props) => {
-            const { id } = props.match.params;
-            return <OneRecipe RecipeId={id} recipes={this.state.recipes} />;
+            // const { id } = props.match.params;
+            return <OneRecipe {...props} recipeId={props.match.params.id} recipes={this.state.recipes} />;
           }}
         />
 

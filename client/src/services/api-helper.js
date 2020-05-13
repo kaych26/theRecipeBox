@@ -45,10 +45,10 @@ export const getAllCategories = async () => {
   return resp.data;
 }
 
-export const getOneCategories = async () => {
-  const resp = await api.get('/categories/${id}');
-  return resp.data;
-}
+// export const getOneCategories = async () => {
+//   const resp = await api.get(`/categories/${id}`);
+//   return resp.data;
+// }
 export const getAllRecipes = async () => {
   const resp = await api.get('/recipes');
   return resp.data;
@@ -64,8 +64,8 @@ export const getDessertRecipes = async () => {
   return resp.data;
 }
 
-export const getOneRecipe = async () => {
-  const resp = await api.get('/recipes/${id}');
+export const getOneRecipe = async (id) => {
+  const resp = await api.get(`/recipes/${id}`);
   return resp.data;
 }
 
