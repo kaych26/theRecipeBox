@@ -8,7 +8,7 @@ export default class CreateRecipe extends Component {
     ingredient: '',
     direction: '',
     story: '',
-    group_id: '',
+    group_id: '2',
     user_id: '',
     category_id: '',
   };

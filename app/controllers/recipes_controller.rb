@@ -12,7 +12,6 @@ class RecipesController < ApplicationController
   
   # GET /recipes/1
   def show
-    # @recipe = Recipe.find(params[:id])
     render json: @recipe
   end
 
