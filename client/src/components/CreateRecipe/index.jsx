@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { getOneRecipe } from '../../services/api-helper';
-import './UpdateRecipe.css';
 
-export default class UpdateRecipe extends Component {
+export default class CreateRecipe extends Component {
   state = {
     name: '',
     image: '',
@@ -21,37 +19,19 @@ export default class UpdateRecipe extends Component {
       [name]: value,
     });
   };
-
-  componentDidMount() {
-    this.setFormData();
-  }
-
-  setFormData = async () => {
-    const recipe = await getOneRecipe(this.props.recipeId);
-    this.setState({
-      id: recipe.id,
-      name: recipe.name,
-      image: recipe.image,
-      prep_time: recipe.prep_time,
-      ingredient: recipe.ingredient,
-      direction: recipe.direction,
-      story: recipe.story,
-      group_id: recipe.group_id,
-      user_id: recipe.user_id,
-      category_id: recipe.category_id,
-    });
-  };
-
   render() {
     return (
       <>
-        <h3>Update Food</h3>
-        <img src={this.state.image} />
-        <form id="update_form"
+        <h3>Create Recipe</h3>
+        <form
+          id="create_form"
           onSubmit={(e) => {
             e.preventDefault();
-            this.props.handleRecipeUpdate(this.state.id, this.state);
-            this.props.history.push(`/recipes/${this.props.recipeId}`);
+            // this.setState({
+            //   user_id: this.props.currentUser.user_id,
+            // });
+            this.props.handleRecipeSubmit(this.state);
+            this.props.history.push(`/recipes`);
           }}
         >
           <input
@@ -68,8 +48,7 @@ export default class UpdateRecipe extends Component {
             value={this.state.name}
             onChange={this.handleChange}
           />
-
-          <input
+<input
             id="update_prep_time"
             type="text"
             name="prep_time"
@@ -90,19 +69,17 @@ export default class UpdateRecipe extends Component {
             value={this.state.direction}
             onChange={this.handleChange}
           />
-                    <input
+          <input
             id="update_story"
             type="text"
             name="story"
             value={this.state.story}
             onChange={this.handleChange}
           />
-
           <button>Submit</button>
-        </form>
+        </form>{' '}
       </>
     );
   }
 }
-
 

@@ -16,9 +16,9 @@ import Hero from '../Hero';
 import ShowCategories from '../ShowCategories';
 import ShowRecipes from '../ShowRecipes';
 import OneRecipe from '../OneRecipe';
-import UpdateRecipe from '../UpdateRecipe';
+import UpdateRecipe from '../ShowRecipes';
+import CreateRecipe from '../CreateRecipe';
 // import CreateFood from './CreateFood';
-// import UpdateFood from './UpdateFood';
 // import FoodItem from './FoodItem';
 
 export default class Main extends Component {
@@ -133,41 +133,21 @@ export default class Main extends Component {
             const { id } = props.match.params;
             return (
               <UpdateRecipe
-                {...props}
-                handleRecipeUpdate={this.handleRecipeUpdate}
                 recipeId={id}
+                handleRecipeUpdate={this.handleRecipeUpdate}
+                {...props}
               />
             );
           }}
         />
 
-        {/* <Route
-          path="/:categories"
-          render={routerProps => (
-            <ShowRecipes recipes={this.state.recipes} {...routerProps} />
-          )}
-        /> */}
-        {/* <Route
-          path="/categories"
-          render={() => <ShowCategories categories={this.state.categories} />}
-        /> */}
-        {/* <Route
-          exact
-          path="/recipes"
+  
+        <Route
+          path="/recipes/create"
           render={(props) => (
-            <ShowRecipes
-              {...props}
-              handleReciptDelete={this.handleReciptDelete}
-              foods={this.state.foods}
-            />
+            <CreateRecipe {...props} handleRecipeSubmit={this.handleRecipeSubmit} />
           )}
-        /> */}
-        {/* <Route
-          path="/recipes/new"
-          render={(props) => (
-            <CreateFood {...props} handleFoodSubmit={this.handleFoodSubmit} />
-          )}
-        /> */}
+        />
         {/* <Route path='/recipes/:id/edit' render={(props) => {
           const { id } = props.match.params
           return <UpdateRecipe

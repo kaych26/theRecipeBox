@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/dinners', to: 'recipes#get_dinner_recipes'
   get '/desserts', to: 'recipes#get_dessert_recipes'
   # get '/categories/:category_id/recipe/:id', to: 'recipes#add_recipe'
-  # post '/recipes/create', to: 'recipes#create'
+  post '/recipes/create', to: 'recipes#create'
   resources :recipes
   
   

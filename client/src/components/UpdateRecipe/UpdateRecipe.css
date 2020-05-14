@@ -1,0 +1,28 @@
+#update_form {
+  display: grid;
+}
+
+#update_image {
+  width: 350px;
+}
+
+#update_name {
+  width: 200px;
+}
+
+#update_prep_time {
+  width: 200px;
+}
+
+#update_ingredient {
+  width: 500px;
+  height: 150px;
+}
+#update_direction {
+  width: 500px;
+  height: 150px;
+}
+#update_story {
+  width: 500px;
+  height: 150px;
+}

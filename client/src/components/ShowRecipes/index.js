@@ -30,7 +30,7 @@ export default function ShowRecipes(props) {
           <br />
         </React.Fragment>
       ))}
-      <Link to="/recipes/new">
+      <Link to="/recipes/create">
         <button>Create</button>
       </Link>
     </div>
