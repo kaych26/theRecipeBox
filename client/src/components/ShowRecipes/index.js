@@ -6,6 +6,11 @@ export default function ShowRecipes(props) {
   return (
     <div>
       <h3>Recipes</h3>
+      <Link to="/recipes/create">
+        <button>Create</button>
+      </Link>
+
+      <br />
 
       {props.recipes.map((recipe) => (
         <React.Fragment key={recipe.id}>
@@ -19,8 +24,8 @@ export default function ShowRecipes(props) {
             }}
           >
             Edit
-          </button>
-          <button
+          </button> */}
+          {/* <button
             onClick={() => {
               props.handleRecipeDelete(recipe.id);
             }}
@@ -30,9 +35,7 @@ export default function ShowRecipes(props) {
           <br />
         </React.Fragment>
       ))}
-      <Link to="/recipes/create">
-        <button>Create</button>
-      </Link>
+      
     </div>
   );
 }

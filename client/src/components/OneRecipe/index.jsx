@@ -34,11 +34,13 @@ export default class OneRecipe extends Component {
             <img src={recipe.image} alt={recipe.name} />
             <button
               onClick={() => {
+                // this.props.handleRecipeUpdate(`${recipe.id}`);
                 this.props.history.push(`/recipes/${recipe.id}/edit`);
               }}
             >
               Edit
             </button>
+
             <button
               onClick={() => {
                 this.props.handleRecipeDelete(`${recipe.id}`);

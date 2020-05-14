@@ -7,6 +7,7 @@ one:
   ingredient: MyText
   direction: MyText
   story: MyText
+  group_id: MyString
   user: one
   category: one
 
@@ -17,5 +18,6 @@ two:
   ingredient: MyText
   direction: MyText
   story: MyText
+  group_id: MyString
   user: two
   category: two

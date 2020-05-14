@@ -20,31 +20,39 @@ dessert = Category.create(group: "dessert", image: "https://www.dairyfoods.com/e
 
 p "#{Category.count} category created"
 
-
-chicken = Recipe.create(
-  name:"Sesame Ginger Salomon", 
-  image:"https://www.onelovelylife.com/wp-content/uploads/2018/03/sesame-gingers-salmon6SM.jpg",
-  prep_time: "1 hour", 
+Recipe.create(
+  name:"Sesame Ginger Salmon", 
+  image:"https://s23209.pcdn.co/wp-content/uploads/2013/11/IMG_6429edit-360x360.jpg",
+  prep_time: "2 hours", 
   ingredient: "1/4 cup olive oil
-2 tablespoons soy sauce
-2 tablespoons rice vinegar
-2 tablespoons sesame oil
-2 tablespoons brown sugar
-2 cloves garlic, pressed
-1 tablespoon grated fresh ginger
-1 tablespoon sesame seeds
-4 green onions, thinly sliced
-4 (5-ounce) salmon filets", 
-direction: "Preheat oven to 400 degrees F. Lightly coat a 9×13 baking dish with nonstick spray.
-Place salmon filets along with the marinade onto prepared baking dish and bake until the fish flakes easily with a fork, about 20 minutes.
-Serve salmon immediately with honey ginger glaze.sauce, rice vinegar, sesame oil, brown sugar, garlic, ginger, sesame seeds and green onions.
+  2 tablespoons soy sauce
+  2 tablespoons rice vinegar
+  2 tablespoons sesame oil
+  2 tablespoons brown sugar
+  2 cloves garlic, pressed
+  1 tablespoon grated fresh ginger
+  1 tablespoon sesame seeds
+  4 green onions, thinly sliced
+  4 (5-ounce) salmon filets
+  FOR THE HONEY GINGER GLAZE
+  2 tablespoons honey
+  1 teaspoon soy sauce
+  1 teaspoon sesame oil
+  1/2 teaspoon Sriracha, or more, to taste
+  1/2 teaspoon grated fresh ginger
+  1/2 teaspoon sesame seeds",
+direction: "DIRECTIONS:
+To make the glaze, whisk together honey, soy sauce, sesame oil, Sriracha, ginger and sesame seeds in a small bowl; set aside.
+In a medium bowl, whisk together olive oil, soy sauce, rice vinegar, sesame oil, brown sugar, garlic, ginger, sesame seeds and green onions.
 In a gallon size Ziploc bag or large bowl, combine ginger marinade and salmon filets; marinate for at least 30 minutes to overnight, turning the bag occasionally.
 Preheat oven to 400 degrees F. Lightly coat a 9×13 baking dish with nonstick spray.
 Place salmon filets along with the marinade onto prepared baking dish and bake until the fish flakes easily with a fork, about 20 minutes.
-Serve salmon immediately with honey ginger glaze.", story: "I am Annie and I enjoy cooking", 
-user_id: 1, category_id: 1)
+Serve salmon immediately with honey ginger glaze.", 
+group_id: "1", user_id: 1, category_id: 1)
 
-Recipe.create(
+
+
+chicken = Recipe.create(
   name:"Grandma's Beef Stew", 
   image:"https://www.kroger.com/asset/594048c7bae8a2517539b915?data=1",
   prep_time: "2 hours", 
@@ -63,7 +71,7 @@ Recipe.create(
   8 small white onions, trimmed, peeled, and halved
   8 small new potatoes, peeled and coarsely chopped", 
 direction: "Season the beef with salt and pepper. In a soup pot, melt the shortening on high heat. When the fat is very hot, add as many of the beef cubes to the pan as you can without crowding them, and brown on all sides; remove with a slotted spoon and set aside; repeat this process until all the beef is browned. Return all the meat to the soup pot and add the boiling water. Stir in the lemon juice, Worcestershire sauce, sugar, onion, bay leaves, and allspice. Reduce the heat to low, cover, and simmer for about 2 hours, until the meat is tender.", story: "I am Annie and I enjoy cooking. Add the carrots, onions, and potatoes; cover and cook for about 20 to 25 minutes, until the vegetables can be pierced easily with a fork. Discard the bay leaves before serving.", 
-user_id: 1, category_id: 1)
+group_id: "1", user_id: 1, category_id: 1)
 
 Recipe.create(
   name:"Simple Cajun Butter Chicken", 
@@ -89,7 +97,7 @@ Sear chicken in batches for 5-7 minutes each side until golden or internal tempe
 While chicken is resting, make the sauce.
 Reduce heat to medium. Melt remaining butter in the pan. Sauté garlic until fragrant (about 30 seconds), while scraping up any browned bits from the pan. Pour in the broth and let reduce for 2-3 minutes, while stirring occasionally.
 Take the pan off the heat. Drizzle sauce over the chicken. Serve warm..", 
-user_id: 1, category_id: 1)
+group_id: "1", user_id: 1, category_id: 1)
 
 Recipe.create(
   name:"Mango Cheesecake", 
@@ -111,7 +119,7 @@ Preheat oven to 325°F. Lightly butter 9-inch-diameter springform pan with 2 3/4
 For filling:
 Puree mangoes in processor until smooth. Set aside 2 cups mango puree (reserve any remaining puree for another use). Beat cream cheese, sugar, and vanilla in large bowl until smooth. Add eggs 1 at a time, beating well after each addition. Add 2 cups mango puree and beat until well blended. Pour filling over crust in pan.
 Bake cake until set and puffed and golden around edges (center may move very slightly when pan is gently shaken), about 1 hour 25 minutes. Cool cake 1 hour. Refrigerate uncovered overnight. Run small knife between cake and sides of pan to loosen. Remove pan sides. Transfer cake to platter. Cut into wedges and serve with sliced mangoes.", 
-user_id: 1, category_id: 2)
+group_id: "2", user_id: 1, category_id: 2)
 
 Recipe.create(
   name:"French Macaron", 
@@ -150,7 +158,7 @@ Transfer the buttercream to a piping bag fitted with a round tip.
 Add a dollop of buttercream to one macaron shell. Top it with another macaron shell to create a sandwich. Repeat with remaining macaron shells and buttercream.
 Place in an airtight container for 24 hours to “bloom”.
 Enjoy!", 
-user_id: 1, category_id: 2)
+group_id: "2", user_id: 1, category_id: 2)
 
 p "#{Recipe.count} recipes created"
 

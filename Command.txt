@@ -1,3 +1,5 @@
 rails g scaffold User username name email password_digest
 rails g scaffold Category group subgroup
-rails g scaffold Recipe name image prep_time ingredient:text direction:text story:text user:references category:references
+rails g scaffold Recipe name image prep_time ingredient:text direction:text story:text group_id user:references category:references
+rails g model Recipe name image prep_time ingredient:text direction:text story:text group_id user:references category:references
+rails g model Recipe name image prep_time ingredient:text direction:text story:text group_id user:references category:references
