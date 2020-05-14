@@ -9,7 +9,7 @@ export default class CreateRecipe extends Component {
     direction: '',
     story: '',
     group_id: '2',
-    user_id: '1',
+    user_id: '',
     category_id: '2',
   };
 
@@ -20,6 +20,7 @@ export default class CreateRecipe extends Component {
     });
   };
   render() {
+   
     return (
       <>
         <h3>Create Recipe</h3>
@@ -27,11 +28,12 @@ export default class CreateRecipe extends Component {
           id="create_form"
           onSubmit={(e) => {
             e.preventDefault();
+
             // this.setState({
-            //   user_id: this.props.currentUser.user_id,
+            //   user_id: {this.currentUser},
             // });
             this.props.handleRecipeSubmit(this.state);
-            this.props.history.push(`/recipes`);
+            this.props.history.push('/');
           }}
         >
           <input

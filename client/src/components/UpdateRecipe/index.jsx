@@ -51,7 +51,8 @@ export default class UpdateRecipe extends Component {
           onSubmit={(e) => {
             e.preventDefault();
             this.props.handleRecipeUpdate(this.state.id, this.state);
-            this.props.history.push(`/recipes/${this.props.recipeId}`);
+            this.props.history.push("/");
+            // this.props.history.push(`/recipes/${this.props.recipeId}`);
           }}
         >
           <input

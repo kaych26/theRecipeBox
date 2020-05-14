@@ -57,9 +57,10 @@ export default class Main extends Component {
   };
 
   handleRecipeSubmit = async (recipeData) => {
+    debugger
     const newRecipe = await postRecipe(recipeData);
     this.setState((prevState) => ({
-      foods: [...prevState.recipes, newRecipe],
+      recipes: [...prevState.recipes, newRecipe],
     }));
   };
 
@@ -76,7 +77,7 @@ export default class Main extends Component {
     await destroyRecipe(id);
     this.setState((prevState) => ({
       recipes: prevState.recipes.filter((recipe) => {
-        return recipe.id !== id;
+        return recipe.id !== parseInt(id);
       }),
     }));
   };
@@ -103,17 +104,23 @@ export default class Main extends Component {
           )}
         </Route>
 
+
         <Route
           path="/dinner"
-          render={(routerProps) => (
-            <ShowRecipes recipes={this.state.dinner_recipes} />
-          )}
+          render={(routerProps) => {
+            const recipe = this.state.categories.find(cat => cat.group === 'dinner')
+            const recipeId = recipe && recipe.id
+            return <ShowRecipes recipes={this.state.recipes.filter(recipe=>recipe.category_id === recipeId)} />
+          }}
         />
         <Route
           path="/dessert"
-          render={(routerProps) => (
-            <ShowRecipes recipes={this.state.dessert_recipes} />
-          )}
+          render={(routerProps) => {
+            const recipe = this.state.categories.find(cat => cat.group === 'dessert')
+            const recipeId = recipe && recipe.id
+            return <ShowRecipes recipes={this.state.recipes.filter(recipe => recipe.category_id === recipeId)} />
+             
+          }}
         />
 
         <Route
@@ -145,6 +152,7 @@ export default class Main extends Component {
             <CreateRecipe
               {...props}
               handleRecipeSubmit={this.handleRecipeSubmit}
+              currentUser={this.currentUser}
             />
           )}
         />

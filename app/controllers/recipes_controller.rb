@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :update, :destroy]
-  # before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   
   # GET /recipes
@@ -27,10 +27,10 @@ class RecipesController < ApplicationController
 
   
 
-  # POST /recipes
+  # POST /recipes/create
   def create
     @recipe = Recipe.new(recipe_params)
-
+@recipe.user=@current_user
     if @recipe.save
       render json: @recipe, status: :created, location: @recipe
     else
@@ -68,6 +68,6 @@ class RecipesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def recipe_params
-      params.require(:recipe).permit(:name, :image, :prep_time, :ingredient, :direction, :story, :user_id, :category_id)
+      params.require(:recipe).permit(:name, :image, :prep_time, :ingredient, :direction, :story, :group_id, :user_id, :category_id)
     end
 end
