@@ -15,8 +15,8 @@ User.destroy_all
 p "#{User.count} user(s) created"
 
 
-@dinner = Category.create(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "1")
-@dessert = Category.create(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
+@dinner = Category.create!(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "1")
+@dessert = Category.create!(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
 
 p "#{Category.count} category created"
 
