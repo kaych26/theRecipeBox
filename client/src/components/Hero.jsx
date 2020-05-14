@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import hero_img from '../../assets/images/img/hero_img.jpg';
+import hero_img from '../assets/images/img/hero_img.jpg';
 
 const StyledHero = styled.section`
   height: 700px;

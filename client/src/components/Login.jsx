@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Hero from '../Hero';
+import Hero from './Hero';
 
 export default class Login extends Component {
   state = {

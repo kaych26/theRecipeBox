@@ -1,16 +1,18 @@
 import React from 'react';
-import logo from '../../assets/images/img/theRecipeBox_logo.png';
+import logo from '../assets/images/img/theRecipeBox_logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Header(props) {
+  // console.log ("=========")
+  // console.log (`${props.currentUser.name}`)
   return (
     <header>
       <Link to="/">
         <img src={logo} />
       </Link>
-      
       {props.currentUser ?
         <>
+          <p>hello {props.currentUser.username}</p>
           <button onClick={props.handleLogout}>Logout</button>
         </>
         :
@@ -19,7 +21,6 @@ export default function Header(props) {
           <Link to="/register">Register</Link>
         </>
       }
-
 
 
       {/* <hr /> */}

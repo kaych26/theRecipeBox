@@ -1,8 +1,23 @@
 import React, { Component } from 'react';
-import { getOneRecipe } from '../../services/api-helper';
-import './UpdateRecipe.css';
 
-export default class UpdateRecipe extends Component {
+export default class CreateRecipe extends Component {
+
+  // t.string "name"
+    // t.string "image"
+    // t.string "prep_time"
+    // t.text "ingredient"
+    // t.text "direction"
+    // t.text "story"
+    // t.string "group_id"
+    // t.bigint "user_id", null: false
+    // t.bigint "category_id", null: false
+    // t.datetime "created_at", precision: 6, null: false
+    // t.datetime "updated_at", precision: 6, null: false
+    // t.index ["category_id"], name: "index_recipes_on_category_id"
+    // t.index ["user_id"], name: "index_recipes_on_user_
+
+
+
   state = {
     name: '',
     image: '',
@@ -10,8 +25,8 @@ export default class UpdateRecipe extends Component {
     ingredient: '',
     direction: '',
     story: '',
-    group_id: '',
-    user_id: '',
+  
+    user_id: this.props.currentUser.id,
     category_id: '',
   };
 
@@ -22,37 +37,41 @@ export default class UpdateRecipe extends Component {
     });
   };
 
-  componentDidMount() {
-    this.setFormData();
-  }
-
-  setFormData = async () => {
-    const recipe = await getOneRecipe(this.props.recipeId);
+  handleSelect = (e) => {
     this.setState({
-      id: recipe.id,
-      name: recipe.name,
-      image: recipe.image,
-      prep_time: recipe.prep_time,
-      ingredient: recipe.ingredient,
-      direction: recipe.direction,
-      story: recipe.story,
-      group_id: recipe.group_id,
-      user_id: recipe.user_id,
-      category_id: recipe.category_id,
-    });
-  };
+      category_id: e.target.value
+    })
 
+  }
   render() {
+    //  debugger
     return (
       <>
-        <h3>Update Food</h3>
-        <img src={this.state.image} />
-        <form id="update_form"
+        {/* <h1>{this.props.currentUser.username}</h1> */}
+        <h3>Create Recipe </h3>
+
+        <select onChange={this.handleSelect}>
+          <option>
+            Select a Category
+          </option>
+          {
+            this.props.categories.map(category => (
+              <option key={category.id} value={category.id}>
+                {category.group}
+              </option>
+            )
+              
+            )
+          }
+        </select>
+
+        <form
+          id="create_form"
           onSubmit={(e) => {
             e.preventDefault();
-            this.props.handleRecipeUpdate(this.state.id, this.state);
-            this.props.history.push("/");
-            // this.props.history.push(`/recipes/${this.props.recipeId}`);
+
+            this.props.handleRecipeSubmit(this.state);
+            this.props.history.push('/');
           }}
         >
           <input
@@ -69,7 +88,6 @@ export default class UpdateRecipe extends Component {
             value={this.state.name}
             onChange={this.handleChange}
           />
-
           <input
             id="update_prep_time"
             type="text"
@@ -91,19 +109,16 @@ export default class UpdateRecipe extends Component {
             value={this.state.direction}
             onChange={this.handleChange}
           />
-                    <input
+          <input
             id="update_story"
             type="text"
             name="story"
             value={this.state.story}
             onChange={this.handleChange}
           />
-
           <button>Submit</button>
-        </form>
+        </form>{' '}
       </>
     );
   }
 }
-
-

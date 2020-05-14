@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import Login from '../Login';
-import Register from '../Register';
+import Login from './Login';
+import Register from './Register';
 import {
   getAllCategories,
   getAllRecipes,
@@ -11,15 +11,14 @@ import {
   postRecipe,
   putRecipe,
   destroyRecipe,
-} from '../../services/api-helper';
-import Hero from '../Hero';
-import ShowCategories from '../ShowCategories';
-import ShowRecipes from '../ShowRecipes';
-import OneRecipe from '../OneRecipe';
-import UpdateRecipe from '../UpdateRecipe';
-import CreateRecipe from '../CreateRecipe';
-// import CreateFood from './CreateFood';
-// import FoodItem from './FoodItem';
+} from '../services/api-helper';
+import Hero from './Hero';
+import ShowCategories from './ShowCategories';
+import ShowRecipes from './ShowRecipes';
+import OneRecipe from './OneRecipe';
+import UpdateRecipe from './UpdateRecipe';
+import CreateRecipe from './CreateRecipe';
+
 
 export default class Main extends Component {
   state = {
@@ -57,7 +56,6 @@ export default class Main extends Component {
   };
 
   handleRecipeSubmit = async (recipeData) => {
-    debugger
     const newRecipe = await postRecipe(recipeData);
     this.setState((prevState) => ({
       recipes: [...prevState.recipes, newRecipe],
@@ -85,6 +83,7 @@ export default class Main extends Component {
   render() {
     return (
       <main>
+ 
         <Route
           path="/login"
           render={(props) => (
@@ -152,26 +151,12 @@ export default class Main extends Component {
             <CreateRecipe
               {...props}
               handleRecipeSubmit={this.handleRecipeSubmit}
-              currentUser={this.currentUser}
+              categories={this.state.categories} 
+              currentUser={this.props.currentUser}
             />
           )}
         />
-        {/* <Route path='/recipes/:id/edit' render={(props) => {
-          const { id } = props.match.params
-          return <UpdateRecipe
-            {...props}
-            handleFoodUpdate={this.handleFoodUpdate}
-            foodId={id}
-          />
-        }} />
-        <Route exact path='/recipes/:id' render={(props) => {
-          const { id } = props.match.params
-          return <FoodItem
-            foodId={id}
-            flavors={this.state.flavors}
-          />
-        }
-        } /> */}
+        
       </main>
     );
   }

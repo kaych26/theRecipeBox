@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import { getOneRecipe } from '../../services/api-helper';
+import { getOneRecipe } from '../services/api-helper';
 
 export default class OneRecipe extends Component {
   state = {

@@ -30,7 +30,8 @@ class RecipesController < ApplicationController
   # POST /recipes/create
   def create
     @recipe = Recipe.new(recipe_params)
-@recipe.user=@current_user
+    @recipe.user=@current_user
+ 
     if @recipe.save
       render json: @recipe, status: :created, location: @recipe
     else
