@@ -10,13 +10,13 @@
 #Recipe.destroy_all
 # Category.destroy_all
 
-User.create(username:"a", email: "a@m.com", password: "123456")
+@user = User.create(username:"a", email: "a@m.com", password: "123456")
 # User.create(username:"admin", email: "admin@mail.com", password: "123456")
 p "#{User.count} user(s) created"
 
 
-dinner = Category.create(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "1")
-dessert = Category.create(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
+@dinner = Category.create(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "1")
+@dessert = Category.create(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
 
 p "#{Category.count} category created"
 
@@ -48,7 +48,7 @@ In a gallon size Ziploc bag or large bowl, combine ginger marinade and salmon fi
 Preheat oven to 400 degrees F. Lightly coat a 9×13 baking dish with nonstick spray.
 Place salmon filets along with the marinade onto prepared baking dish and bake until the fish flakes easily with a fork, about 20 minutes.
 Serve salmon immediately with honey ginger glaze.", 
-group_id: "1", user_id: 1, category_id: 1)
+group_id: "1", user_id: @user, category_id: @dinner)
 
 
 
@@ -71,7 +71,7 @@ chicken = Recipe.create(
   8 small white onions, trimmed, peeled, and halved
   8 small new potatoes, peeled and coarsely chopped", 
 direction: "Season the beef with salt and pepper. In a soup pot, melt the shortening on high heat. When the fat is very hot, add as many of the beef cubes to the pan as you can without crowding them, and brown on all sides; remove with a slotted spoon and set aside; repeat this process until all the beef is browned. Return all the meat to the soup pot and add the boiling water. Stir in the lemon juice, Worcestershire sauce, sugar, onion, bay leaves, and allspice. Reduce the heat to low, cover, and simmer for about 2 hours, until the meat is tender.", story: "I am Annie and I enjoy cooking. Add the carrots, onions, and potatoes; cover and cook for about 20 to 25 minutes, until the vegetables can be pierced easily with a fork. Discard the bay leaves before serving.", 
-group_id: "1", user_id: 1, category_id: 1)
+group_id: "1", user_id: @user, category_id: @dinner)
 
 Recipe.create(
   name:"Simple Cajun Butter Chicken", 
@@ -97,7 +97,7 @@ Sear chicken in batches for 5-7 minutes each side until golden or internal tempe
 While chicken is resting, make the sauce.
 Reduce heat to medium. Melt remaining butter in the pan. Sauté garlic until fragrant (about 30 seconds), while scraping up any browned bits from the pan. Pour in the broth and let reduce for 2-3 minutes, while stirring occasionally.
 Take the pan off the heat. Drizzle sauce over the chicken. Serve warm..", 
-group_id: "1", user_id: 1, category_id: 1)
+group_id: "1", user_id: @user, category_id: @dinner)
 
 Recipe.create(
   name:"Mango Cheesecake", 
@@ -119,7 +119,7 @@ Preheat oven to 325°F. Lightly butter 9-inch-diameter springform pan with 2 3/4
 For filling:
 Puree mangoes in processor until smooth. Set aside 2 cups mango puree (reserve any remaining puree for another use). Beat cream cheese, sugar, and vanilla in large bowl until smooth. Add eggs 1 at a time, beating well after each addition. Add 2 cups mango puree and beat until well blended. Pour filling over crust in pan.
 Bake cake until set and puffed and golden around edges (center may move very slightly when pan is gently shaken), about 1 hour 25 minutes. Cool cake 1 hour. Refrigerate uncovered overnight. Run small knife between cake and sides of pan to loosen. Remove pan sides. Transfer cake to platter. Cut into wedges and serve with sliced mangoes.", 
-group_id: "2", user_id: 1, category_id: 2)
+group_id: "2", user_id: @user, category_id: @dessert)
 
 Recipe.create(
   name:"French Macaron", 
@@ -158,7 +158,7 @@ Transfer the buttercream to a piping bag fitted with a round tip.
 Add a dollop of buttercream to one macaron shell. Top it with another macaron shell to create a sandwich. Repeat with remaining macaron shells and buttercream.
 Place in an airtight container for 24 hours to “bloom”.
 Enjoy!", 
-group_id: "2", user_id: 1, category_id: 2)
+group_id: "2", user_id: @user, category_id: @dessert)
 
 p "#{Recipe.count} recipes created"
 
