@@ -20,7 +20,7 @@ p "#{User.count} user(s) created"
 
 p "#{Category.count} category created"
 
-Recipe.create(
+@r1 = Recipe.create(
   name:"Sesame Ginger Salmon", 
   image:"https://s23209.pcdn.co/wp-content/uploads/2013/11/IMG_6429edit-360x360.jpg",
   prep_time: "2 hours", 
@@ -50,9 +50,7 @@ Place salmon filets along with the marinade onto prepared baking dish and bake u
 Serve salmon immediately with honey ginger glaze.", 
 group_id: "1", user_id: @user, category_id: @dinner)
 
-
-
-chicken = Recipe.create(
+@r2 = Recipe.create(
   name:"Grandma's Beef Stew", 
   image:"https://www.kroger.com/asset/594048c7bae8a2517539b915?data=1",
   prep_time: "2 hours", 
@@ -73,7 +71,7 @@ chicken = Recipe.create(
 direction: "Season the beef with salt and pepper. In a soup pot, melt the shortening on high heat. When the fat is very hot, add as many of the beef cubes to the pan as you can without crowding them, and brown on all sides; remove with a slotted spoon and set aside; repeat this process until all the beef is browned. Return all the meat to the soup pot and add the boiling water. Stir in the lemon juice, Worcestershire sauce, sugar, onion, bay leaves, and allspice. Reduce the heat to low, cover, and simmer for about 2 hours, until the meat is tender.", story: "I am Annie and I enjoy cooking. Add the carrots, onions, and potatoes; cover and cook for about 20 to 25 minutes, until the vegetables can be pierced easily with a fork. Discard the bay leaves before serving.", 
 group_id: "1", user_id: @user, category_id: @dinner)
 
-Recipe.create(
+@r3 = Recipe.create(
   name:"Simple Cajun Butter Chicken", 
   image:"https://cafedelites.com/wp-content/uploads/2019/09/HERO-Cajun-Butter-Chicken-Breasts-1.jpg",
   prep_time: "2 hours", 
@@ -99,7 +97,7 @@ Reduce heat to medium. Melt remaining butter in the pan. Sauté garlic until fra
 Take the pan off the heat. Drizzle sauce over the chicken. Serve warm..", 
 group_id: "1", user_id: @user, category_id: @dinner)
 
-Recipe.create(
+@r4 = Recipe.create(
   name:"Mango Cheesecake", 
   image:"https://assets.epicurious.com/photos/57b208990e4be0011c1bf088/6:4/w_620%2Ch_413/mango-cheesecake.jpg",
   prep_time: "1 hour", 
@@ -121,7 +119,7 @@ Puree mangoes in processor until smooth. Set aside 2 cups mango puree (reserve a
 Bake cake until set and puffed and golden around edges (center may move very slightly when pan is gently shaken), about 1 hour 25 minutes. Cool cake 1 hour. Refrigerate uncovered overnight. Run small knife between cake and sides of pan to loosen. Remove pan sides. Transfer cake to platter. Cut into wedges and serve with sliced mangoes.", 
 group_id: "2", user_id: @user, category_id: @dessert)
 
-Recipe.create(
+@r5 = Recipe.create(
   name:"French Macaron", 
   image:"https://preppykitchen.com/wp-content/uploads/2020/04/French-Macarons-feature-1200-768x1088.jpg",
   prep_time: "1 hour", 
