@@ -1,23 +1,6 @@
 import React, { Component } from 'react';
 
 export default class CreateRecipe extends Component {
-
-  // t.string "name"
-    // t.string "image"
-    // t.string "prep_time"
-    // t.text "ingredient"
-    // t.text "direction"
-    // t.text "story"
-    // t.string "group_id"
-    // t.bigint "user_id", null: false
-    // t.bigint "category_id", null: false
-    // t.datetime "created_at", precision: 6, null: false
-    // t.datetime "updated_at", precision: 6, null: false
-    // t.index ["category_id"], name: "index_recipes_on_category_id"
-    // t.index ["user_id"], name: "index_recipes_on_user_
-
-
-
   state = {
     name: '',
     image: '',
@@ -25,7 +8,7 @@ export default class CreateRecipe extends Component {
     ingredient: '',
     direction: '',
     story: '',
-  
+
     user_id: this.props.currentUser.id,
     category_id: '',
   };
@@ -39,32 +22,21 @@ export default class CreateRecipe extends Component {
 
   handleSelect = (e) => {
     this.setState({
-      category_id: e.target.value
-    })
-
-  }
+      category_id: e.target.value,
+    });
+  };
   render() {
-    //  debugger
     return (
       <>
-        {/* <h1>{this.props.currentUser.username}</h1> */}
         <h3>Create Recipe </h3>
-
         <select onChange={this.handleSelect}>
-          <option>
-            Select a Category
-          </option>
-          {
-            this.props.categories.map(category => (
-              <option key={category.id} value={category.id}>
-                {category.group}
-              </option>
-            )
-              
-            )
-          }
+          <option>Select a Category</option>
+          {this.props.categories.map((category) => (
+            <option key={category.id} value={category.id}>
+              {category.group}
+            </option>
+          ))}
         </select>
-
         <form
           id="create_form"
           onSubmit={(e) => {
