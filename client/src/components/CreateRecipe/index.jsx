@@ -9,8 +9,8 @@ export default class CreateRecipe extends Component {
     direction: '',
     story: '',
     group_id: '2',
-    user_id: '',
-    category_id: '',
+    user_id: '1',
+    category_id: '2',
   };
 
   handleChange = (e) => {
