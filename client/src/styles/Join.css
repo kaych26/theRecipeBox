@@ -1,0 +1,24 @@
+.join-outerframe {
+  padding: 0 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCFDF8;
+  height: 300px;
+}
+
+.join-boxmsg-frame {
+  display: flex;
+  align-items: center;
+}
+.join-title {
+  font-size: 3em;
+  color: #1ABFE0;
+
+}
+.join-message {
+  width: 60%;
+  font-size: 1.5em;
+  text-align: center;
+}

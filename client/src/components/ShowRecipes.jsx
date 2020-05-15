@@ -28,7 +28,7 @@ export default function ShowRecipes(props) {
                 <img
                   className="recipe-img"
                   src={recipe.image}
-                  width="450px"
+                  width="380px"
                   height="300px"
                 />
               </div>
