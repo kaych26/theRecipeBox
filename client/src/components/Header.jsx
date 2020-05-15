@@ -15,19 +15,26 @@ export default function Header(props) {
         </Link>
       </div>
 
-      {/* {props.currentUser && <div>Hello {props.currentUser.usernmae}</div>} */}
-
       {props.currentUser ? (
         <>
           <div className="header-hello">hello {props.currentUser.username}</div>
           <div>
-          <button onClick={props.handleLogout}>Logout</button>
+            <button onClick={props.handleLogout} className="header-button">
+              Logout
+            </button>
           </div>
         </>
       ) : (
         <>
-          <Link to="/login">Login</Link>
-          <Link to="/register">Register</Link>
+          <Link to="/login">
+            <button className="header-button">Login</button>
+          </Link>
+            <Link to="/register">
+              <h1 className="header-register">
+              Register
+              </h1>
+
+              </Link>
         </>
       )}
 
@@ -35,32 +42,3 @@ export default function Header(props) {
     </header>
   );
 }
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import logo from '../../assets/images/img/theRecipeBox_logo.png';
-
-// export default function Header(props) {
-//   return (
-//     <header>
-//       <img src={logo}/>
-
-//       {props.currentUser ? (
-//         <>
-//           <p>{props.currentUser.username}</p>
-//           <button onClick={props.handleLogout}>Logout</button>
-//         </>
-//       ) : (
-//         <Link to="/login">Login/Register</Link>
-//       )}
-//       <hr />
-//       {props.currentUser && (
-//         <>
-//           <Link to="/foods">Foods</Link>
-//           <Link to="/flavors">Flavors</Link>
-//           <hr />
-//         </>
-//       )}
-//     </header>
-//   );
-// }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/ShowCategories.css';
 import '../styles/Global.css';
+import '../styles/Home.css';
 
 export default function ShowCategories(props) {
   // debugger
@@ -9,16 +9,25 @@ export default function ShowCategories(props) {
     <div>
       {/* <h3>Categories</h3> */}
       {props.categories.map((category) => (
-        <div key={category.id}>
-         
-          {/* <Link to={`/${category.group}`} category_id={category.id}> */}
-          <Link to={`/${category.group}/${category.id}`} category_id={category.id}>
-            {category.group}
-            <img className="category-img" src={category.image} />
-          </Link>
-        </div>
+        <p key={category.id}>
+          <div className="category-div">
+            {/* <Link to={`/${category.group}`} category_id={category.id}> */}
+            <Link
+              to={`/${category.group}/${category.id}`}
+              category_id={category.id}
+            >
+              <img
+                src={category.image}
+                alt={category.group}
+                width="550px"
+                height="360px"
+              />
+              <h2 className="category-title">{category.group}</h2>
+            </Link>
+          </div>
+        </p>
       ))}
-      <h2>Bon Appetite !</h2>
+      <h2 className="bon-appetite">Bon Appetite !</h2>
     </div>
   );
 }

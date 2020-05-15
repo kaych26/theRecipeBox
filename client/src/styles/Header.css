@@ -1,10 +1,36 @@
 header {
-
-display: flex;  
+  display: flex;
 }
 
 .header-hello {
   width: 200px;
   height: 20px;
   text-align: center;
+  font-size: 24px;
+}
+
+.header-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  border-color: #1abfe0;
+  color: #1abfe0;
+  cursor: pointer;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 20px;
+  
+  /* padding: 10px; */
+  /* background-color: #1ABFE0 */
+}
+.header-button:hover{
+  color: #fff;
+background-color: #1abfe0;
+
+
+}
+
+.header-register {
+  font-size: 20px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #1abfe0;
 }
