@@ -18,7 +18,7 @@ export default function Header(props) {
         {props.currentUser ? (
           <>
             <div className="header-hello">
-              hello {props.currentUser.username}
+              hello {props.currentUser.username} {props.currentUser.id}
             </div>
             <div className="button-frame">
               <button onClick={props.handleLogout} className="header-button">

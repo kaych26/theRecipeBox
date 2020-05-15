@@ -1,4 +1,51 @@
+/* * {
+
+} */
+
 .showrecipes-outerframe {
   margin-top: 60px;
   /* background-color: green */
+}
+
+
+.showrecipes-title-frame {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.showrecipes-cat-name{
+  padding: 40px;
+  /* width: 200px; */
+  
+}
+
+.showrecipes-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.showrecipes-img {
+  
+  padding-right: 50px;
+
+}
+
+.showrecipes-name-frame {
+  /* background-color: blue; */
+  padding-left: 30px;
+  width: 500px;
+  height: 300px;
+}
+
+.showrecipes-name {
+  /* background-color: red; */
+}
+
+.showrecipes-time {
+  /* background-color: green; */
+
 }

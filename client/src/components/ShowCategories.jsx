@@ -7,6 +7,7 @@ export default function ShowCategories(props) {
   // debugger
   return (
     <div>
+      
       {/* <h3>Categories</h3> */}
       {props.categories.map((category) => (
         <p key={category.id}>
@@ -16,13 +17,13 @@ export default function ShowCategories(props) {
               to={`/${category.group}/${category.id}`}
               category_id={category.id}
             >
+              <h1 className="category-title">{category.group}</h1>
               <img
                 src={category.image}
                 alt={category.group}
                 width="550px"
                 height="360px"
               />
-              <h2 className="category-title">{category.group}</h2>
             </Link>
           </div>
         </p>

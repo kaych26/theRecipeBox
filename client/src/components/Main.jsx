@@ -110,6 +110,7 @@ export default class Main extends Component {
             const recipeId = recipe && recipe.id;
             return (
               <ShowRecipes
+                category="dinner"
                 recipes={this.state.recipes.filter(
                   (recipe) => recipe.category_id === recipeId
                 )}
@@ -127,6 +128,7 @@ export default class Main extends Component {
             const recipeId = recipe && recipe.id;
             return (
               <ShowRecipes
+                category="dessert"
                 recipes={this.state.recipes.filter(
                   (recipe) => recipe.category_id === recipeId
                 )}
@@ -140,10 +142,10 @@ export default class Main extends Component {
           path="/recipes/:id"
           render={(props) => (
             <OneRecipe
-              {...props}
               handleRecipeUpdate={this.handleRecipeUpdate}
               handleRecipeDelete={this.handleRecipeDelete}
               currentUser={this.props.currentUser}
+              {...props}
             />
           )}
         />

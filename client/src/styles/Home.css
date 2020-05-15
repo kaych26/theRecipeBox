@@ -1,10 +1,17 @@
+.category-div {
+text-align: center;
+padding: 30px 0;
+}
+
 .category-title {
-  background-color: red;
-  width: 180px;
+  /* display: inline; */
+  background-color: #fff;
+  /* width: 180px; */
 }
 
 .bon-appetite {
   font-size: 60px;
   text-align: center;
   color: #1ABFE0;
+  padding-top: 25px;
 }

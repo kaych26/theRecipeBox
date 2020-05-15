@@ -1,4 +1,20 @@
 .onerecipe-outerframe {
   margin-top: 60px;
+  text-align: center;
   
+}
+
+.onerecipe-name-frame {
+  padding: 25px 0;
+
+}
+
+.onerecipe-title {
+  color: #1ABFE0;
+}
+
+.onerecipe-ingredient,
+.onerecipe-direction,
+.onerecipe-story {
+  padding: 10px 50px;
 }
