@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/ShowCategories.css';
+import '../styles/Global.css';
 
 export default function ShowCategories(props) {
   // debugger
