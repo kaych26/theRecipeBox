@@ -18,12 +18,12 @@ export default class Login extends Component {
   };
 
   render() {
-    // debugger
+ 
     const { username, email, password } = this.state;
     return (
       <>
       <Hero />
-      <Link to="/register">register</Link>
+      <Link to="/register">click here to Register</Link>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -31,8 +31,10 @@ export default class Login extends Component {
           this.props.history.push('/');
         }}
       >
-        <h3>Login</h3>
-        <label htmlFor="username">username:</label>
+        <h3 ">Login</h3>
+          <label htmlFor="username">username:</label>
+          <div className="form-key>
+
         <input
           id="username"
           type="text"
@@ -40,6 +42,7 @@ export default class Login extends Component {
           value={username}
           onChange={this.handleChange}
         />
+          </div>
         <br />
         <label htmlFor="email">email:</label>
         <input

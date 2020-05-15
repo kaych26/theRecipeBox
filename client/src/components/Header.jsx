@@ -29,11 +29,11 @@ export default function Header(props) {
           </>
         ) : (
           <div>
-            <Link to="/register">
-              <p className="header-register">Register</p>
-            </Link>
             <Link to="/login">
               <button className="header-button">Login</button>
+            </Link>
+            <Link to="/register">
+              <p className="header-register">Register</p>
             </Link>
           </div>
         )}
