@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import { getOneRecipe } from '../services/api-helper';
+import '../styles/Global.css';
+import '../styles/OneRecipe.css';
 
 export default class OneRecipe extends Component {
   state = {
@@ -24,14 +26,21 @@ export default class OneRecipe extends Component {
     this.setState({ recipe });
   };
 
+  checkUserMatch() {
+    const { recipe } = this.state;
+   
+    if (recipe && this.props.currentUser)
+      if (recipe.user_id ===  this.props.currentUser.id )
+        return 1;
+  }
+
   render() {
     const { recipe } = this.state;
 
     return (
-      <div>
-        {recipe && (
+      <div className="onerecipe-outerframe">
+        {this.checkUserMatch() && (
           <>
-            <img src={recipe.image} alt={recipe.name} />
             <button
               onClick={() => {
                 // this.props.handleRecipeUpdate(`${recipe.id}`);
@@ -49,11 +58,16 @@ export default class OneRecipe extends Component {
             >
               Delete
             </button>
+          </>
+        )}
 
+        {recipe && (
+          <>
             <h3>
               {recipe.name}
               {recipe.prep_time}
             </h3>
+            <img src={recipe.image} alt={recipe.name} />
             <p>{recipe.ingredient}</p>
             <p>{recipe.direction}</p>
             <p>{recipe.story}</p>

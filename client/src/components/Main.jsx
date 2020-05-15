@@ -19,7 +19,6 @@ import OneRecipe from './OneRecipe';
 import UpdateRecipe from './UpdateRecipe';
 import CreateRecipe from './CreateRecipe';
 
-
 export default class Main extends Component {
   state = {
     categories: [],
@@ -105,18 +104,34 @@ export default class Main extends Component {
         <Route
           path="/dinner"
           render={(routerProps) => {
-            const recipe = this.state.categories.find(cat => cat.group === 'dinner')
-            const recipeId = recipe && recipe.id
-            return <ShowRecipes recipes={this.state.recipes.filter(recipe=>recipe.category_id === recipeId)} />
+            const recipe = this.state.categories.find(
+              (cat) => cat.group === 'dinner'
+            );
+            const recipeId = recipe && recipe.id;
+            return (
+              <ShowRecipes
+                recipes={this.state.recipes.filter(
+                  (recipe) => recipe.category_id === recipeId
+                )}
+                currentUser={this.props.currentUser}
+              />
+            );
           }}
         />
         <Route
           path="/dessert"
           render={(routerProps) => {
-            const recipe = this.state.categories.find(cat => cat.group === 'dessert')
-            const recipeId = recipe && recipe.id
-            return <ShowRecipes recipes={this.state.recipes.filter(recipe => recipe.category_id === recipeId)} />
-             
+            const recipe = this.state.categories.find(
+              (cat) => cat.group === 'dessert'
+            );
+            const recipeId = recipe && recipe.id;
+            return (
+              <ShowRecipes
+                recipes={this.state.recipes.filter(
+                  (recipe) => recipe.category_id === recipeId
+                )}
+              />
+            );
           }}
         />
 
@@ -128,18 +143,22 @@ export default class Main extends Component {
               {...props}
               handleRecipeUpdate={this.handleRecipeUpdate}
               handleRecipeDelete={this.handleRecipeDelete}
+              currentUser={this.props.currentUser}
             />
           )}
         />
 
         <Route
-          path='/recipes/:id/edit' render={(props) => {
-            const { id } = props.match.params
-            return <UpdateRecipe
-              {...props}
-              handleRecipeUpdate={this.handleRecipeUpdate}
-              recipeId={id}
-            />
+          path="/recipes/:id/edit"
+          render={(props) => {
+            const { id } = props.match.params;
+            return (
+              <UpdateRecipe
+                {...props}
+                handleRecipeUpdate={this.handleRecipeUpdate}
+                recipeId={id}
+              />
+            );
           }}
         />
 
@@ -149,12 +168,11 @@ export default class Main extends Component {
             <CreateRecipe
               {...props}
               handleRecipeSubmit={this.handleRecipeSubmit}
-              categories={this.state.categories} 
+              categories={this.state.categories}
               currentUser={this.props.currentUser}
             />
           )}
         />
-        
       </main>
     );
   }

@@ -1,26 +1,30 @@
 header {
-  background-color: white;
+  height: 60px;
+  background-color: #fff;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   /* right: 0;
   left: 0; */
   z-index: 999;
- 
+  /* border-bottom: #1abfe0; */
 }
 
 .header-hello {
-  /* width: 200px; */
-  /* height: 20px; */
+  /* font-family: 'Annie Use Your Telescope', cursive; */
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   padding-right: 20px;
+}
+.button-frame {
+  padding-right: 25px;
 }
 
 .header-button {
-  width: 60px;
+  width: 70px;
   height: 30px;
   border-radius: 8px;
   border-color: #1abfe0;

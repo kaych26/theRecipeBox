@@ -31,10 +31,8 @@ export default class Login extends Component {
           this.props.history.push('/');
         }}
       >
-        <h3 ">Login</h3>
-          <label htmlFor="username">username:</label>
-          <div className="form-key>
-
+        <h3 className="form-key">Login</h3>
+        <label htmlFor="username">username:</label>
         <input
           id="username"
           type="text"
@@ -42,16 +40,15 @@ export default class Login extends Component {
           value={username}
           onChange={this.handleChange}
         />
-          </div>
         <br />
-        <label htmlFor="email">email:</label>
+        {/* <label htmlFor="email">email:</label>
         <input
           id="email"
           type="text"
           name="email"
           value={email}
           onChange={this.handleChange}
-        />
+        /> */}
         <br />
         <label htmlFor="password">password:</label>
         <input
