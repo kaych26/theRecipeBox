@@ -1,10 +1,18 @@
-#update_form {
-  display: grid;
+.updaterecipe-outerframe {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-#update_image {
-  width: 350px;
+.updaterecipe-img {
+  padding-bottom: 25px;
 }
+      #update_form {
+        display: grid;
+      }
 
 #update_name {
   width: 200px;

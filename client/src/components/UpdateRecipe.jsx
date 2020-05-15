@@ -45,9 +45,9 @@ export default class UpdateRecipe extends Component {
 
   render() {
     return (
-      <>
+      <div className="updaterecipe-outerframe">
         <h3>Update Food</h3>
-        <img src={this.state.image} />
+        <img src={this.state.image} width="300px" height="250px" className="updaterecipe-img"/>
         <form id="update_form"
           onSubmit={(e) => {
             e.preventDefault();
@@ -102,7 +102,7 @@ export default class UpdateRecipe extends Component {
 
           <button>Submit</button>
         </form>
-      </>
+      </div>
     );
   }
 }

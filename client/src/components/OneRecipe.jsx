@@ -20,7 +20,7 @@ export default class OneRecipe extends Component {
 
   componentDidMount() {
     this.setRecipe(this.props.match.params.id);
-    this.checkUserMatch();
+    // this.checkUserMatch();
   }
 
   setRecipe = async (id) => {
@@ -79,20 +79,21 @@ export default class OneRecipe extends Component {
               <h3>Prep time: {recipe.prep_time}</h3>
             </div>
 
-            <img src={recipe.image} alt={recipe.name} />
+            <img src={recipe.image} alt={recipe.name} width="300px" height="250px" className="onerecipe-img"/>
+
             <div className="onerecipe-ingredient">
               <h2 className="onerecipe-title">INGREDIENTS</h2>
-              <p>{recipe.ingredient}</p>
+              <p className="onerecipe-p-font">{recipe.ingredient}</p>
             </div>
 
             <div className="onerecipe-direction">
               <h2 className="onerecipe-title">DIRECTIONS</h2>
-              <p>{recipe.direction}</p>
+              <p className="onerecipe-p-font">{recipe.direction}</p>
             </div>
 
             <div className="onerecipe-story">
               <h2 className="onerecipe-title"> STORY</h2>
-              <p>{recipe.story}</p>
+              <p className="onerecipe-p-font">{recipe.story}</p>
             </div>
           </>
         )}

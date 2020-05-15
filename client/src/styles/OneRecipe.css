@@ -3,18 +3,28 @@
   text-align: center;
   
 }
-
 .onerecipe-name-frame {
   padding: 25px 0;
-
+  
+}
+.onerecipe-name {
+  font-size: 2.5em;
 }
 
 .onerecipe-title {
   color: #1ABFE0;
 }
 
+.onerecipe-img {
+  padding-bottom: 25px;
+}
+
 .onerecipe-ingredient,
 .onerecipe-direction,
 .onerecipe-story {
   padding: 10px 50px;
+}
+
+.onerecipe-p-font {
+  font-size: 1.3em;
 }
