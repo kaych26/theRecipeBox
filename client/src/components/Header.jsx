@@ -15,29 +15,29 @@ export default function Header(props) {
         </Link>
       </div>
 
-      {props.currentUser ? (
-        <>
-          <div className="header-hello">hello {props.currentUser.username}</div>
+
+        {props.currentUser ? (
+          <>
+            <div className="header-hello">
+              hello {props.currentUser.username}
+            </div>
+            <div>
+              <button onClick={props.handleLogout} className="header-button">
+                Logout
+              </button>
+            </div>
+          </>
+        ) : (
           <div>
-            <button onClick={props.handleLogout} className="header-button">
-              Logout
-            </button>
-          </div>
-        </>
-      ) : (
-        <>
-          <Link to="/login">
-            <button className="header-button">Login</button>
-          </Link>
             <Link to="/register">
-              <h1 className="header-register">
-              Register
-              </h1>
-
-              </Link>
-        </>
-      )}
-
+              <p className="header-register">Register</p>
+            </Link>
+            <Link to="/login">
+              <button className="header-button">Login</button>
+            </Link>
+          </div>
+        )}
+     
       {/* <hr /> */}
     </header>
   );

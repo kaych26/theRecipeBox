@@ -83,7 +83,6 @@ export default class Main extends Component {
   render() {
     return (
       <main>
- 
         <Route
           path="/login"
           render={(props) => (
@@ -102,7 +101,6 @@ export default class Main extends Component {
             <ShowCategories categories={this.state.categories} />
           )}
         </Route>
-
 
         <Route
           path="/dinner"

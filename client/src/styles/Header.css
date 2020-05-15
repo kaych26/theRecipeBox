@@ -1,12 +1,17 @@
 header {
+  width: 96%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
 }
 
 .header-hello {
-  width: 200px;
-  height: 20px;
+  /* width: 200px; */
+  /* height: 20px; */
   text-align: center;
   font-size: 24px;
+  padding-right: 20px;
 }
 
 .header-button {
@@ -18,19 +23,17 @@ header {
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 20px;
-  
-  /* padding: 10px; */
-  /* background-color: #1ABFE0 */
 }
-.header-button:hover{
+
+.header-button:hover {
   color: #fff;
-background-color: #1abfe0;
-
-
+  background-color: #1abfe0;
 }
 
 .header-register {
+  display: inline-block;
   font-size: 20px;
   font-family: 'Annie Use Your Telescope', cursive;
   color: #1abfe0;
+  padding-right: 10px;
 }
