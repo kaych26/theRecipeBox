@@ -4,7 +4,8 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: #FCFDF8;
+  background-color: #e7ebed;
+  /* background-color: #FCFDF8; */
   height: 350px;
 }
 
@@ -23,4 +24,25 @@
   font-size: 1.6em;
   text-align: center;
   padding-left: 25px;
+}
+
+.join-button {
+  width: 6.5em;
+  height: 2em;
+  border-radius: 8px;
+  border-color: none;
+  /* border-color: #1abfe0; */
+  background-color: #D0D8DB;
+  color: #143C4E;
+  /* color: #1abfe0; */
+  cursor: pointer;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  
+}
+
+.join-button:hover {
+  color: #fff;
+  background-color: #1abfe0;
 }

@@ -16,7 +16,7 @@ export default function Join(props) {
         </h3>
       </div>
       <Link to="/login">
-        <button className="join-button">Login</button>
+        <button className="join-button">Join now</button>
       </Link>
     </div>
   );

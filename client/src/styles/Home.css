@@ -1,22 +1,25 @@
 .category-div {
-text-align: center;
-padding: 30px 0;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .category-title {
-
   background-color: #fff;
-
 }
 
 .category-img {
   border-radius: 20px;
-
+  border: 2px solid #fff;
+  
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
 }
 
 .bon-appetite {
   font-size: 60px;
   text-align: center;
-  color: #1ABFE0;
+  color: #1abfe0;
   padding-top: 25px;
 }
