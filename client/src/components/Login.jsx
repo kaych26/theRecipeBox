@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
-import Hero from './Hero';
-import hero_img from '../assets/images/img/hero_img.jpg';
 import '../styles/Login.css';
 
 export default class Login extends Component {
@@ -23,9 +19,6 @@ export default class Login extends Component {
     const { username, email, password } = this.state;
     return (
       <>
-        {/* <Hero /> */}
-        {/* <img src={hero_img}/> */}
-
         <div className="login-outerframe">
           {/* <Link to="/register" className="register-link">
             Click here to Register
