@@ -4,20 +4,26 @@ import recipe_box_img from '../assets/images/img/recipe_box_blue.png';
 import '../styles/Join.css';
 
 export default function Join(props) {
+  const link_path = props.currentUser ? '/recipe/create' : '/register';
+  const button_text = props.currentUser ? 'Add Recipe' : 'Join us';
   return (
     <div className="join-outerframe">
-      <h2 className="join-title">Join the Recipe Box</h2>
       <div className="join-boxmsg-frame">
         <img src={recipe_box_img} />
-        <h3 className="join-message">
-          “ The pandemic changed our life style & many families are faced with
-          cooking challenges. Let’s start sharing our cooking ideas by joining
-          the Recipe Box.”
-        </h3>
+        <h2 className="join-title">Join the Recipe Box</h2>
       </div>
-      <Link to="/login">
-        <button className="join-button">Join now</button>
-      </Link>
+
+      <p className="join-message">
+        “ The pandemic changed our life style & many families are faced with
+        cooking challenges. Let’s start sharing our cooking ideas by joining the
+        Recipe Box.”
+      </p>
+
+      <div className="login-button-frame">
+        <Link to={link_path}>
+          <button className="join-button">{button_text}</button>
+        </Link>
+      </div>
     </div>
   );
 }

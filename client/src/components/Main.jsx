@@ -106,7 +106,7 @@ export default class Main extends Component {
               (recipe) => recipe.popular === '1'
             )}
           />
-          <Join />
+          <Join currentUser={this.props.currentUser}/>
           {this.state.categories && (
             <ShowCategories categories={this.state.categories} />
           )}
@@ -145,6 +145,7 @@ export default class Main extends Component {
                 recipes={this.state.recipes.filter(
                   (recipe) => recipe.category_id === recipeId
                 )}
+                currentUser={this.props.currentUser}
               />
             );
           }}

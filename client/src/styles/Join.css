@@ -1,34 +1,31 @@
 .join-outerframe {
   padding: 0 50px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   background-color: #e7ebed;
-  /* background-color: #FCFDF8; */
-  height: 350px;
+  height: 380px;
 }
 
 .join-boxmsg-frame {
+  padding-top: 20px;
   display: flex;
   align-items: center;
-  /* align-items: space-between; */
+  justify-content: center;
+ 
 }
 .join-title {
   font-size: 3em;
   color: #1ABFE0;
-
+  padding-left: 40px;
 }
+
 .join-message {
-  width: 60%;
   font-size: 1.6em;
   text-align: center;
-  padding-left: 25px;
+  padding: 0 3em .6em 3em;
 }
 
 .join-button {
-  width: 6.5em;
-  height: 2em;
+  width: 9em;
+  height: 2.5em;
   border-radius: 8px;
   border-color: none;
   /* border-color: #1abfe0; */
@@ -37,7 +34,7 @@
   /* color: #1abfe0; */
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 1.2em;
+  font-size: 1.3em;
   letter-spacing: 0.1em;
   
 }

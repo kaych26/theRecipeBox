@@ -11,9 +11,11 @@ export default function ShowRecipes(props) {
         <h1 className="showrecipes-cat-name">{props.category} Recipes</h1>
 
         {props.currentUser && (
-          <Link to="/recipe/create">
-            <button>Create</button>
-          </Link>
+          <div className="showrecipe-button">
+            <Link to="/recipe/create">
+              <button>Create</button>
+            </Link>
+          </div>
         )}
       </div>
 
@@ -22,7 +24,7 @@ export default function ShowRecipes(props) {
       {props.recipes.map((recipe) => (
         <React.Fragment key={recipe.id}>
           <Link to={`/recipes/${recipe.id}`}>
-          {/* <Link to={`/recipes/${recipe.group}`}> */}
+            {/* <Link to={`/recipes/${recipe.group}`}> */}
             <div className="showrecipes-frame">
               <div className="showrecipes-imgframe">
                 <img
