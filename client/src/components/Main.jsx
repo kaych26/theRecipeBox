@@ -98,10 +98,15 @@ export default class Main extends Component {
             <Register {...props} handleRegister={this.props.handleRegister} />
           )}
         />
+
         <Route exact path="/">
           <Hero />
           <Join />
-          <Popular />
+          <Popular
+            recipes={this.state.recipes.filter(
+              (recipe) => recipe.popular === '1'
+            )}
+          />
           {this.state.categories && (
             <ShowCategories categories={this.state.categories} />
           )}

@@ -10,7 +10,7 @@ Recipe.destroy_all
 Category.destroy_all
 User.destroy_all
 
-@user = User.create(username:"a", email: "a@m.com", password: "123456")
+@user = User.create(username:"Annie", email: "Annie@m.com", password: "123456")
 # User.create(username:"admin", email: "admin@mail.com", password: "123456")
 p "#{User.count} user(s) created"
 
@@ -19,16 +19,6 @@ p "#{User.count} user(s) created"
 @dessert = Category.create!(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
 
 p "#{Category.count} category created"
-
-# t.string :name
-#       t.string :image
-#       t.string :prep_time
-#       t.text :ingredient
-#       t.text :direction
-#       t.text :story
-#       t.string :group_id
-#       t.references :user, null: false, foreign_key: true
-#       t.references :category, null: false, foreign_key: tr
 
 @r1 = Recipe.create!(
 name: "Sesame Ginger Salmon",
@@ -39,8 +29,9 @@ ingredient: "1/4 cup olive oil 2 tablespoons soy sauce  2 tablespoons rice vineg
 direction: "DIRECTIONS:  To make the glaze, whisk together honey, soy sauce, sesame oil, Sriracha, ginger and sesame seeds in a small bowl; set aside. In a medium bowl, whisk together olive oil, soy sauce, rice vinegar, sesame oil, brown sugar, garlic, ginger, sesame seeds and green onions.  In a gallon size Ziploc bag or large bowl, combine ginger marinade and salmon filets; marinate for at least 30 minutes to overnight, turning the bag occasionally.  Preheat oven to 400 degrees F. Lightly coat a 9×13 baking dish with nonstick spray.  Place salmon filets along with the marinade onto prepared baking dish and bake until the fish flakes easily with a fork, about 20 minutes.  Serve salmon immediately with honey ginger glaze.",
 story: "my story",
 group_id: "1",
+popular: "1",
 user: @user,
-category: @dinner
+category: @dinner,
 )
 
 @r2 = Recipe.create!(
@@ -51,8 +42,9 @@ ingredient: "2 lbs. stewing beef, cut into cubes 1 tsp. salt ¼ tsp. freshly gro
 direction: "Season the beef with salt and pepper. In a soup pot, melt the shortening on high heat. When the fat is very hot, add as many of the beef cubes to the pan as you can without crowding them, and brown on all sides; remove with a slotted spoon and set aside; repeat this process until all the beef is browned. Return all the meat to the soup pot and add the boiling water. Stir in the lemon juice, Worcestershire sauce, sugar, onion, bay leaves, and allspice. Reduce the heat to low, cover, and simmer for about 2 hours, until the meat is tender. Add the carrots, onions, and potatoes; cover and cook for about 20 to 25 minutes, until the vegetables can be pierced easily with a fork. Discard the bay leaves before serving.",
 story: "my story",
 group_id: "1",
+popular: "0",
 user: @user,
-category: @dinner
+category: @dinner,
 )
 
 @r3 = Recipe.create!(
@@ -81,8 +73,9 @@ ingredient: "For Cajun Seasoning:
   # Take the pan off the heat. Drizzle sauce over the chicken. Serve warm..",
 story: "my story",
 group_id: "1",
+popular: "0",
 user: @user,
-category: @dinner
+category: @dinner,
 )
 
 @r4 = Recipe.create!(
@@ -107,11 +100,12 @@ Puree mangoes in processor until smooth. Set aside 2 cups mango puree (reserve a
 Bake cake until set and puffed and golden around edges (center may move very slightly when pan is gently shaken), about 1 hour 25 minutes. Cool cake 1 hour. Refrigerate uncovered overnight. Run small knife between cake and sides of pan to loosen. Remove pan sides. Transfer cake to platter. Cut into wedges and serve with sliced mangoes.", 
 story: "my story",
 group_id: "2",
+popular: "1",
 user: @user,
-category: @dessert
+category: @dessert,
 )
 
-@r4 = Recipe.create!(
+@r5 = Recipe.create!(
 name: "French Macaron",
 image:"https://preppykitchen.com/wp-content/uploads/2020/04/French-Macarons-feature-1200-768x1088.jpg",
 prep_time: "2 hour",
@@ -146,8 +140,9 @@ ingredient: "MACARONS
   Place in an airtight container for 24 hours to “bloom", 
 story: "my story",
 group_id: "2",
+popular: "1",
 user: @user,
-category: @dessert
+category: @dessert,
 )
 
 

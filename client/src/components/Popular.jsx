@@ -8,8 +8,13 @@ export default function Popular(props) {
     <div className="popular-outerframe">
       <h1>
         Popular Recipes
-         <img src=""/>
       </h1>
+      <div className="popularimage-frame">
+
+         {props.recipes.map((recipe) => 
+           <img src={recipe.image} alt={recipe.name} width="200px" height="200px"/>
+         )}
+      </div>
 
     </div>
   )
