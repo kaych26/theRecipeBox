@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/CreateRecipe.css';
 
 export default class CreateRecipe extends Component {
   state = {
@@ -27,8 +28,9 @@ export default class CreateRecipe extends Component {
   };
   render() {
     return (
-      <>
-        <h3>Create Recipe </h3>
+      <div className="createrecipe-outerframe">
+        <h3 className="createrecipe-title">Create Recipe </h3>
+
         <select onChange={this.handleSelect}>
           <option>Select a Category</option>
           {this.props.categories.map((category) => (
@@ -90,7 +92,7 @@ export default class CreateRecipe extends Component {
           />
           <button>Submit</button>
         </form>{' '}
-      </>
+      </div>
     );
   }
 }

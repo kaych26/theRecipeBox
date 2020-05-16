@@ -84,12 +84,14 @@ export default class Main extends Component {
     return (
       <main>
         <Route
+          exact
           path="/login"
           render={(props) => (
             <Login {...props} handleLogin={this.props.handleLogin} />
           )}
         />
         <Route
+          exact
           path="/register"
           render={(props) => (
             <Register {...props} handleRegister={this.props.handleRegister} />
@@ -104,6 +106,7 @@ export default class Main extends Component {
         </Route>
 
         <Route
+          exact
           path="/dinner"
           render={(routerProps) => {
             const recipe = this.state.categories.find(
@@ -122,6 +125,7 @@ export default class Main extends Component {
           }}
         />
         <Route
+          exact
           path="/dessert"
           render={(routerProps) => {
             const recipe = this.state.categories.find(
@@ -153,6 +157,7 @@ export default class Main extends Component {
         />
 
         <Route
+          exact
           path="/recipes/:id/edit"
           render={(props) => {
             const { id } = props.match.params;

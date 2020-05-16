@@ -22,6 +22,7 @@ export default function ShowRecipes(props) {
       {props.recipes.map((recipe) => (
         <React.Fragment key={recipe.id}>
           <Link to={`/recipes/${recipe.id}`}>
+          {/* <Link to={`/recipes/${recipe.group}`}> */}
             <div className="showrecipes-frame">
               <div className="showrecipes-imgframe">
                 <img

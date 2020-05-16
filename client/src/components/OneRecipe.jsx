@@ -15,7 +15,7 @@ export default class OneRecipe extends Component {
     group_id: '',
     user_id: '',
     category_id: '',
-    current_user_id: '',
+  
   };
 
   componentDidMount() {
@@ -46,31 +46,32 @@ export default class OneRecipe extends Component {
       <div className="onerecipe-outerframe">
         {/* {recipe && <h1> Recipe creator: {recipe.user_id}</h1>} */}
         {/* {this.props.currentUser && <h1> User: {this.props.currentUser.id}</h1>} */}
-
         {/* {recipe && this.props.currentUser  } */}
+        {/* {this.checkUserMatch() && ( */}
+        {/* {this.props.currentUser} && ( */}
+   
+        {this.props.currentUser &&
+          <button
+            onClick={() => {
+              this.props.history.push(`/recipes/${recipe.id}/edit`);
+            }}
+          >
+            Edit
+          </button>
+        }
 
-        {this.checkUserMatch() && (
-          <>
-            <button
-              onClick={() => {
-                // this.props.handleRecipeUpdate(`${recipe.id}`);
-                this.props.history.push(`/recipes/${recipe.id}/edit`);
-              }}
-            >
-              Edit
-            </button>
-
-            <button
-              onClick={() => {
-                this.props.handleRecipeDelete(`${recipe.id}`);
-                this.props.history.push('/');
-              }}
-            >
-              Delete
-            </button>
-          </>
-        )}
-
+        {this.props.currentUser &&
+          <button
+            onClick={() => {
+              this.props.handleRecipeDelete(`${recipe.id}`);
+              this.props.history.push('/');
+            }}
+          >
+            Delete
+          </button>
+        }
+  
+      
         {recipe && (
           <>
             <div className="onerecipe-name-frame">
@@ -79,7 +80,13 @@ export default class OneRecipe extends Component {
               <h3>Prep time: {recipe.prep_time}</h3>
             </div>
 
-            <img src={recipe.image} alt={recipe.name} width="300px" height="250px" className="onerecipe-img"/>
+            <img
+              src={recipe.image}
+              alt={recipe.name}
+              width="300px"
+              height="250px"
+              className="onerecipe-img"
+            />
 
             <div className="onerecipe-ingredient">
               <h2 className="onerecipe-title">INGREDIENTS</h2>

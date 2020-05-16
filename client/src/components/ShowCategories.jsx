@@ -14,7 +14,8 @@ export default function ShowCategories(props) {
           <div className="category-div">
             {/* <Link to={`/${category.group}`} category_id={category.id}> */}
             <Link
-              to={`/${category.group}/${category.id}`}
+              to={`/${category.group}`}
+              // to={`/${category.group}/${category.id}`}
               category_id={category.id}
             >
               <h1 className="category-title">{category.group}</h1>

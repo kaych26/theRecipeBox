@@ -16,8 +16,13 @@
   align-content: center;
   
 }
-.showrecipes-cat-name{
+
+.showrecipes-cat-name {
+  color: #1ABFE0;
   padding: 40px;
+  font-size: 2.8em;
+  text-transform: capitalize;
+  padding: 50 0px;
   /* width: 200px; */
   
 }
