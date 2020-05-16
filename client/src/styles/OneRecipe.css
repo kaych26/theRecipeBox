@@ -12,19 +12,21 @@
 }
 
 .onerecipe-title {
+  padding-top: 25px;
   color: #1ABFE0;
 }
 
 .onerecipe-img {
-  padding-bottom: 25px;
+  border-radius: 20px;
 }
 
 .onerecipe-ingredient,
 .onerecipe-direction,
 .onerecipe-story {
-  padding: 10px 50px;
+  padding: 0px 80px;
 }
 
 .onerecipe-p-font {
-  font-size: 1.3em;
+  padding-top: 5px;
+  font-size: 1.4em;
 }

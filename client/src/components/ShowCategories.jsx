@@ -23,6 +23,7 @@ export default function ShowCategories(props) {
                 alt={category.group}
                 width="550px"
                 height="360px"
+                className="category-img"
               />
             </Link>
           </div>

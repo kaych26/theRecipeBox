@@ -8,11 +8,14 @@
 }
 
 .updaterecipe-img {
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
+  border-radius: 20px;
 }
-      #update_form {
-        display: grid;
-      }
+
+#update_form {
+  padding-top: 35px;;
+  display: grid;
+}
 
 #update_name {
   width: 200px;
