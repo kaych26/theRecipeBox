@@ -42,7 +42,7 @@ ingredient: "2 lbs. stewing beef, cut into cubes 1 tsp. salt ¼ tsp. freshly gro
 direction: "Season the beef with salt and pepper. In a soup pot, melt the shortening on high heat. When the fat is very hot, add as many of the beef cubes to the pan as you can without crowding them, and brown on all sides; remove with a slotted spoon and set aside; repeat this process until all the beef is browned. Return all the meat to the soup pot and add the boiling water. Stir in the lemon juice, Worcestershire sauce, sugar, onion, bay leaves, and allspice. Reduce the heat to low, cover, and simmer for about 2 hours, until the meat is tender. Add the carrots, onions, and potatoes; cover and cook for about 20 to 25 minutes, until the vegetables can be pierced easily with a fork. Discard the bay leaves before serving.",
 story: "my story",
 group_id: "1",
-popular: "0",
+popular: "1",
 user: @user,
 category: @dinner,
 )
@@ -73,7 +73,7 @@ ingredient: "For Cajun Seasoning:
   # Take the pan off the heat. Drizzle sauce over the chicken. Serve warm..",
 story: "my story",
 group_id: "1",
-popular: "0",
+popular: "1",
 user: @user,
 category: @dinner,
 )

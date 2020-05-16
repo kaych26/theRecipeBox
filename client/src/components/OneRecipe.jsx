@@ -63,8 +63,9 @@ export default class OneRecipe extends Component {
         {this.props.currentUser &&
           <button
             onClick={() => {
-              this.props.handleRecipeDelete(`${recipe.id}`);
-              this.props.history.push('/');
+            this.props.handleRecipeDelete(`${recipe.id}`);
+            this.props.history.goBack();
+             
             }}
           >
             Delete
