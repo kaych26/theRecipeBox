@@ -33,6 +33,7 @@ header {
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 20px;
+  letter-spacing: .1em;
 }
 
 .header-button:hover {
@@ -46,4 +47,5 @@ header {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #1abfe0;
   padding: 0 15px;
+  letter-spacing: .1em;
 }
