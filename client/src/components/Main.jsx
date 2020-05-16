@@ -101,12 +101,12 @@ export default class Main extends Component {
 
         <Route exact path="/">
           <Hero />
-          <Join />
           <Popular
             recipes={this.state.recipes.filter(
               (recipe) => recipe.popular === '1'
             )}
           />
+          <Join />
           {this.state.categories && (
             <ShowCategories categories={this.state.categories} />
           )}
