@@ -1,9 +1,35 @@
 .createrecipe-outerframe {
   margin-top: 60px;
+}
+.createrecipe-title {
+  font-size: 2.5em;
+  color: #1abfe0;
+  text-align: center;
+  padding: .5em 0;
+}
+
+.create-select-frame {
+  text-align: center;
+}
+.create-select {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
 
 }
 
-.createrecipe-title {
-  font-size: 2.5em;
-  color: #1ABFE0;
+.create-form-frame {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-form-label {
+  font-size: 1.5em;
+}
+.update-input {
+  font-family: 'Annie Use Your Telescope', cursive;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
 }
