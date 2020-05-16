@@ -9,9 +9,14 @@ export default class CreateRecipe extends Component {
     ingredient: '',
     direction: '',
     story: '',
-
-    user_id: this.props.currentUser.id,
+    user_id: '',
     category_id: '',
+  };
+
+  assignUserId = () => {
+    this.setState({
+      user_id: this.props.currentUser.id,
+    });
   };
 
   handleChange = (e) => {
@@ -27,10 +32,11 @@ export default class CreateRecipe extends Component {
     });
   };
   render() {
+    
     return (
       <div className="createrecipe-outerframe">
+        {this.props.currentUser && this.assignUserId}
         <h3 className="createrecipe-title">Create Recipe </h3>
-
         <select onChange={this.handleSelect}>
           <option>Select a Category</option>
           {this.props.categories.map((category) => (

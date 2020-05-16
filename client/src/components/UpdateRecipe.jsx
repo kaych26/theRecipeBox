@@ -53,8 +53,7 @@ export default class UpdateRecipe extends Component {
             e.preventDefault();
             this.props.handleRecipeUpdate(this.state.id, this.state);
             this.props.history.goBack();
-            // this.props.history.push("/");
-            // this.props.history.push(`/recipes/${this.props.recipeId}`);
+           
           }}
         >
           <input

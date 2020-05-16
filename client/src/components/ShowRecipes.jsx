@@ -11,7 +11,7 @@ export default function ShowRecipes(props) {
         <h1 className="showrecipes-cat-name">{props.category} Recipes</h1>
 
         {props.currentUser && (
-          <Link to="/recipes/create">
+          <Link to="/recipe/create">
             <button>Create</button>
           </Link>
         )}

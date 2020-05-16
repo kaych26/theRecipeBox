@@ -179,7 +179,8 @@ export default class Main extends Component {
         />
 
         <Route
-          path="/recipes/create"
+          exact
+          path="/recipe/create"
           render={(props) => (
             <CreateRecipe
               {...props}
