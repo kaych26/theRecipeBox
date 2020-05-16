@@ -14,6 +14,7 @@ import {
 } from '../services/api-helper';
 import Hero from './Hero';
 import Join from './Join';
+import Popular from './Popular';
 import ShowCategories from './ShowCategories';
 import ShowRecipes from './ShowRecipes';
 import OneRecipe from './OneRecipe';
@@ -100,6 +101,7 @@ export default class Main extends Component {
         <Route exact path="/">
           <Hero />
           <Join />
+          <Popular />
           {this.state.categories && (
             <ShowCategories categories={this.state.categories} />
           )}
