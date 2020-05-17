@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/img/theRecipeBox_logo2.png';
+import logo from '../assets/images/img/theRecipeBox_logo.png';
 import { Link } from 'react-router-dom';
 import '../styles/Global.css';
 import '../styles/Header.css';
@@ -7,10 +7,10 @@ import '../styles/Header.css';
 export default function Header(props) {
  
   return (
-    <header>
+    <header className="header">
       <div className="header-logo">
         <Link to="/">
-          <img src={logo} />
+          <img src={logo} className="header-img" />
         </Link>
       </div>
 
