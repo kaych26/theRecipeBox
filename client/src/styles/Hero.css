@@ -16,13 +16,36 @@
   position: absolute;
   top: 21em;
   max-width: 1040px;
-  padding-right: 2em;
+  padding-right: 4em;
 }
 
 .hero-title {
-  font-size: 3.4em;
+  font-size: 3.6em;
+  width: 410px;
+  text-align: center;
+  letter-spacing: .05em;
+}
 
-  width: 300px;
+@media only screen and (max-width: 768px) {
+  /* height: 100%;
+  background: red; */
+}
 
+@media only screen and (max-width: 414px) {
+  .hero-outerframe {
+  background-image: url('../assets/images/img/hero_small_img.jpg');
+  height: 300px;
+  }
 
+  .hero-title-frame {
+    position: absolute;
+    top: 7.2em;
+    max-width: 1040px;
+    padding-right: 2em;
+  }
+  .hero-title {
+    font-size: 1.4em;
+    width: 160px;
+    text-align: center;
+  }
 }
