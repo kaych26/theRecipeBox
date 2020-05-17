@@ -3,7 +3,11 @@
   margin-top: 60px;
   background-image: url('../assets/images/img/hero_long_img.png');
   text-align: center;
-  
+  height: 1300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
 }
 .onerecipe-name-frame {
   padding: 25px 0;

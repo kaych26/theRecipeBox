@@ -20,10 +20,7 @@ export default class Login extends Component {
     return (
       <>
         <div className="login-outerframe">
-          {/* <Link to="/register" className="register-link">
-            Click here to Register
-          </Link> */}
-
+         
           <form
             className="login-form"
             onSubmit={(e) => {

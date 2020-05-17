@@ -1,7 +1,11 @@
 .showrecipes-outerframe {
   margin-top: 60px;
   background-image: url('../assets/images/img/hero_long_img.png');
-  /* background-color: green */
+  height: 1300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
 }
 
 
@@ -32,7 +36,7 @@
 }
 .showrecipes-imgframe {
   width: 380;
-  height: 300;
+  /* height: 300; */
 }
 
 .showrecipes-img {

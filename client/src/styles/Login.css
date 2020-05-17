@@ -1,38 +1,29 @@
 .login-outerframe {
   margin-top: 60px;
   background-image: url('../assets/images/img/hero_img.jpg');
-  height: 650px;
+  height: 680px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .login-form {
   position: absolute;
-  top: 12em;
   max-width: 1040px;
+  top: 16em;
+  left: 16.5em;
 
   display: flex;
   flex-direction: column;
 
   align-content: space-around;
   justify-content: space-around;
-  padding: 3.5em 3.5em 0 0;
 }
 
-.register-link {
-  padding: 1.1em;
-  font-size: 1.8em;
-  /* color: #1abfe0; */
-}
 .login-form-title {
-  font-size: 1.8em;
-  padding-bottom: 0.3em;
+  font-size: 2.2em;
+  padding-bottom: .7em;
   text-align: center;
 }
 
@@ -45,7 +36,7 @@
 .email,
 .password {
   font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 0.1em;
 }
 
@@ -53,18 +44,18 @@
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.1em;
   letter-spacing: 0.1em;
-  width: 12em;
+  width: 13em;
   text-align: center;
-  padding-right: 0.5em;
+
 }
 
 .login-button-frame {
   text-align: center;
-  padding: 0.7em 0;
+  padding-top: 2em;
 }
 
 .login-button {
-  width: 70px;
+  width: 135px;
   height: 30px;
   border-radius: 8px;
   border-color: #1abfe0;
@@ -86,41 +77,29 @@
 }
 
 @media only screen and (max-width: 414px) {
-  login-outerframe {
-    margin-top: 60px;
+  .login-outerframe {
+    background-image: url('../assets/images/img/hero_login_small.png');
+    height: 510px;
+  }
 
-    background-size: 50%;
-    height: 300px;
+  .login-form-title {
+    font-size: 2em;
+    padding-bottom: .5em;
+  }
+
+  .login-form {
+    top: 10em;
+    left: 1.8em;
+    top: 10.3em;
     max-width: 414px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0 0 0 0;
   }
 
   .username,
   .email,
   .password {
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 1em;
-    letter-spacing: 0.1em;
+    font-size: 1.1em;
   }
 
-  .login-input {
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-    width: 10em;
-    padding-right: 0.3em;
-  }
-  .login-button {
-    width: 4em;
-    height: 1.7em;
 
-    color: #1abfe0;
-    cursor: pointer;
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-  }
 }
