@@ -28,15 +28,12 @@
   height: 2.5em;
   border-radius: 8px;
   border-color: none;
-  /* border-color: #1abfe0; */
   background-color: #D0D8DB;
   color: #143C4E;
-  /* color: #1abfe0; */
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.3em;
   letter-spacing: 0.1em;
-  
 }
 
 .join-button:hover {
@@ -50,21 +47,25 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .join-outerframe {
+    height: 310px;
+    padding: 0 20px;
+  }
 .recipebox-img {
   display: none;
 
 }
   .join-title {
     font-size: 2em;
-    padding: .5em 0;
+    padding: .2em 0;
   }
   .join-message {
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-align: center;
-    padding: .5em 0;
+    padding: .2em 0;
   }
   .join-button {
     width: 6em;
-    height: 2em;
+    height: 1.8em;
   }
 }
