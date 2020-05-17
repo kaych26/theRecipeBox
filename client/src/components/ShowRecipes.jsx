@@ -5,8 +5,8 @@ import '../styles/ShowRecipes.css';
 export default function ShowRecipes(props) {
   return (
     <div className="showrecipes-outerframe">
-      <div className="showrecipes-title-frame">
         <h1 className="showrecipes-cat-name">{props.category} Recipes</h1>
+      <div className="showrecipes-title-frame">
 
         {props.currentUser && (
           <div className="showrecipe-button">
@@ -17,7 +17,7 @@ export default function ShowRecipes(props) {
         )}
       </div>
 
-      {/* <div className="showrecipes-each-frame"> */}
+      <div className="showrecipes-wrapframe">
       {props.recipes ?
         (
           props.recipes.map((recipe) => (
@@ -30,8 +30,6 @@ export default function ShowRecipes(props) {
                       className="showrecipes-img"
                       src={recipe.image}
                       alt={recipe.name}
-                    // width="380px"
-                    // height="300px"
                     />
                   </div>
 
@@ -48,6 +46,6 @@ export default function ShowRecipes(props) {
         
         ): <h2>Need recipes ...</h2> }
       </div>
-    // </div>
+    </div>
   );
 }
