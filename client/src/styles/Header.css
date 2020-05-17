@@ -14,7 +14,7 @@
 .header-hello {
   /* font-family: 'Annie Use Your Telescope', cursive; */
   text-align: center;
-  font-size: 28px;
+  font-size: 1.8em;
   padding-right: 20px;
 }
 
@@ -64,7 +64,10 @@
 @media only screen and (max-width: 414px) {
 
 .header-img {
-  width: 160px;
+  width: 130px;
+}
+.header-hello {
+  font-size: 1.2em;
 }
 
 .button-frame {
@@ -73,7 +76,7 @@
 }
 
 .header-button {
-  width: 5em;
+  width: 4em;
   height: 1.5em;
   border-radius: 8px;
   border-color: #1abfe0;

@@ -20,7 +20,6 @@ export default class Login extends Component {
     return (
       <>
         <div className="login-outerframe">
-         
           <form
             className="login-form"
             onSubmit={(e) => {
@@ -30,36 +29,38 @@ export default class Login extends Component {
             }}
           >
             <h3 className="login-form-title">Login</h3>
-            <div className="login-div">
-              <label className="username" htmlFor="username">
-                username:{' '}
-              </label>
-              <input
-                className="login-input"
-                id="username"
-                type="text"
-                name="username"
-                value={username}
-                onChange={this.handleChange}
-              />
-            </div>
+            <div>
+              <div className="login-div">
+                <label className="username" htmlFor="username">
+                  username:{' '}
+                </label>
+                <input
+                  className="login-input"
+                  id="username"
+                  type="text"
+                  name="username"
+                  value={username}
+                  onChange={this.handleChange}
+                />
+              </div>
 
-            <div className="login-div">
-              <label className="password" htmlFor="password">
-                password:{' '}
-              </label>
-              <input
-                className="login-input"
-                id="password"
-                type="password"
-                name="password"
-                value={password}
-                onChange={this.handleChange}
-              />
-            </div>
+              <div className="login-div">
+                <label className="password" htmlFor="password">
+                  password:{' '}
+                </label>
+                <input
+                  className="login-input"
+                  id="password"
+                  type="password"
+                  name="password"
+                  value={password}
+                  onChange={this.handleChange}
+                />
+              </div>
 
-            <div className="login-button-frame">
-              <button className="login-button">Submit</button>
+              <div className="login-button-frame">
+                <button className="login-button">Submit</button>
+              </div>
             </div>
           </form>
         </div>

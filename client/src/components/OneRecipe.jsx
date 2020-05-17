@@ -39,16 +39,9 @@ export default class OneRecipe extends Component {
 
   render() {
     const { recipe } = this.state;
-    // const userId = this.props.currentUser.id
-    // const userId = this.props.currentUser.id
-
+  
     return (
       <div className="onerecipe-outerframe">
-        {/* {recipe && <h1> Recipe creator: {recipe.user_id}</h1>} */}
-        {/* {this.props.currentUser && <h1> User: {this.props.currentUser.id}</h1>} */}
-        {/* {recipe && this.props.currentUser  } */}
-        {/* {this.checkUserMatch() && ( */}
-        {/* {this.props.currentUser} && ( */}
    
         {this.props.currentUser &&
           <button
