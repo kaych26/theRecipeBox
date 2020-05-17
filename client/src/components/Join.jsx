@@ -9,7 +9,7 @@ export default function Join(props) {
   return (
     <div className="join-outerframe">
       <div className="join-boxmsg-frame">
-        <img src={recipe_box_img} />
+        <img src={recipe_box_img} alt="recipe box" className="recipebox-img"/>
         <h2 className="join-title">Join the Recipe Box</h2>
       </div>
 

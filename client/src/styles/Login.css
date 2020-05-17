@@ -1,7 +1,7 @@
 .login-outerframe {
   margin-top: 60px;
   background-image: url('../assets/images/img/hero_img.jpg');
-  min-height: 650px;
+  height: 650px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +47,6 @@
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.3em;
   letter-spacing: 0.1em;
- 
 }
 
 .login-input {
@@ -56,8 +55,7 @@
   letter-spacing: 0.1em;
   width: 12em;
   text-align: center;
-  padding-right: .5em;
- 
+  padding-right: 0.5em;
 }
 
 .login-button-frame {
@@ -80,4 +78,49 @@
 .login-button:hover {
   color: #fff;
   background-color: #1abfe0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* height: 100%;
+  background: red; */
+}
+
+@media only screen and (max-width: 414px) {
+  login-outerframe {
+    margin-top: 60px;
+
+    background-size: 50%;
+    height: 300px;
+    max-width: 414px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .username,
+  .email,
+  .password {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+
+  .login-input {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    width: 10em;
+    padding-right: 0.3em;
+  }
+  .login-button {
+    width: 4em;
+    height: 1.7em;
+
+    color: #1abfe0;
+    cursor: pointer;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+  }
 }

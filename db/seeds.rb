@@ -15,8 +15,11 @@ User.destroy_all
 p "#{User.count} user(s) created"
 
 
-@dinner = Category.create!(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "1")
-@dessert = Category.create!(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
+@salads = Category.create!(group: "salads", image: "https://www.eatright.org/-/media/eatrightimages/food/planningandprep/snackandmealideas/healthysaladingredients-598567824.jpg", group_id: "1")
+@pasta = Category.create!(group: "pasta", image: "https://images.immediate.co.uk/production/volatile/sites/2/2015/06/11540.jpg", group_id: "2")
+@dinner = Category.create!(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "3")
+@dessert = Category.create!(group: "dessert", image: "https://assets.kraftfoods.com/recipe_images/opendeploy/204595_640x428.jpg", group_id: "4")
+# @dessert = Category.create!(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
 
 p "#{Category.count} category created"
 

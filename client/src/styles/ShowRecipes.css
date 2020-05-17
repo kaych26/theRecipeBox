@@ -1,9 +1,6 @@
-/* * {
-
-} */
-
 .showrecipes-outerframe {
   margin-top: 60px;
+  background-image: url('../assets/images/img/hero_long_img.png');
   /* background-color: green */
 }
 
@@ -18,16 +15,17 @@
 }
 
 .showrecipes-cat-name {
-  color: #1ABFE0;
+  color: #292727;
+  /* color: #1ABFE0; */
   padding: 40px;
   font-size: 2.8em;
   text-transform: capitalize;
-  padding: 50 0px;
+  padding-top: 2em;
   /* width: 200px; */
-  
 }
 
 .showrecipes-frame {
+  padding-top: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +37,8 @@
 
 .showrecipes-img {
   border-radius: 20px;
+  width: 350px;
+  height: 270px;
 }
 
 .showrecipes-name-frame {
