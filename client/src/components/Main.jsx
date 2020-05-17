@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import Login from './Login';
+import SignIn from './SignIn';
 import Register from './Register';
 import {
   getAllCategories,
@@ -88,7 +88,7 @@ export default class Main extends Component {
           exact
           path="/login"
           render={(props) => (
-            <Login {...props} handleLogin={this.props.handleLogin} />
+            <SignIn {...props} handleLogin={this.props.handleLogin} />
           )}
         />
         <Route
@@ -106,7 +106,7 @@ export default class Main extends Component {
               (recipe) => recipe.popular === '1'
             )}
           />
-          <Join currentUser={this.props.currentUser}/>
+          <Join currentUser={this.props.currentUser} />
           {this.state.categories && (
             <ShowCategories categories={this.state.categories} />
           )}

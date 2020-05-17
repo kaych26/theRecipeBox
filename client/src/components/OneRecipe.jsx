@@ -43,7 +43,7 @@ export default class OneRecipe extends Component {
     return (
       <div className="onerecipe-outerframe">
    
-        {this.props.currentUser &&
+        {/* {this.props.currentUser &&
           <button
             onClick={() => {
               this.props.history.push(`/recipes/${recipe.id}/edit`);
@@ -63,7 +63,7 @@ export default class OneRecipe extends Component {
           >
             Delete
           </button>
-        }
+        } */}
   
       
         {recipe && (
@@ -98,7 +98,37 @@ export default class OneRecipe extends Component {
             </div>
           </>
         )}
+
+
+        {this.props.currentUser &&
+          <button
+            onClick={() => {
+              this.props.history.push(`/recipes/${recipe.id}/edit`);
+            }}
+          >
+            Edit
+          </button>
+        }
+
+        {this.props.currentUser &&
+          <button
+            onClick={() => {
+            this.props.handleRecipeDelete(`${recipe.id}`);
+            this.props.history.goBack();
+             
+            }}
+          >
+            Delete
+          </button>
+        }
+
+
+
+
+
       </div>
+
+
     );
   }
 }

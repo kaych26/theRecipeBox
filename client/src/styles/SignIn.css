@@ -1,4 +1,4 @@
-.register-outerframe {
+.signon-outerframe {
   margin-top: 60px;
   background-image: url('../assets/images/img/hero_img.jpg');
   height: 850px;
@@ -12,43 +12,41 @@
   align-items: center;
 }
 
-.register-form-frame {
+.signon-form-frame {
   position: absolute;
-  top: 20em;
+  top: 21em;
   max-width: 1040px;
   padding-right: 4em;
   font-family: 'Annie Use Your Telescope', cursive;
- 
 }
 
-.register-form {
+.signon-form {
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.3em;
   text-align: center;
   letter-spacing: 0.05em;
 }
 
-.register-title {
+.signon-title {
   font-size: 2em;
 }
-.register-nameAndvalue {
+.signon-nameAndvalue {
   padding: 5px 0;
-  text-align: right;
 }
 
-.register-input {
+.signon-input {
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.3em;
   text-align: center;
 }
 
-.register-button-frame {
+.signon-button-frame {
   padding-top: 30px;
   text-align: center;
 
 }
 
-.register-button {
+.signon-button {
   height: 35px;
   width: 130px;
   border-radius: 8px;
@@ -60,7 +58,7 @@
   letter-spacing: 0.1em;
 }
 
-.register-button:hover {
+.signon-button:hover {
   color: #fff;
   background-color: #1abfe0;
 }
@@ -70,34 +68,25 @@
 
 @media only screen and (max-width: 414px) {
 
-  .register-outerframe {
+  .signon-outerframe {
     background-image: url('../assets/images/img/hero_login_small.png');
     height: 510px;
+    /* width: 100%; */
   }
 
-  .register-form-frame {
+  .signon-form-frame {
     position: absolute;
     top: 10em;
     max-width: 414px;
     padding-right: 1em;
   }
-  .register-title {
-    font-size: 1.3em;
+  .signon-title {
+    font-size: 1.5em;
   }
-  .register-input {
-    font-size: 1.1em;
-  }
-
-  .register-button-frame {
-    padding-top: 15px;
+  .signon-input {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.2em;
     text-align: center;
-  
-  }
-
-  .register-button {
-    height: 30px;
-    width: 130px;
-    font-size: 1em;
   }
 }
 

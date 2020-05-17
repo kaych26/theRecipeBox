@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Login.css';
+import '../styles/Register.css';
 
 export default class Register extends Component {
   state = {
@@ -7,7 +7,6 @@ export default class Register extends Component {
     email: '',
     password: '',
   };
-
   handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({
@@ -18,65 +17,60 @@ export default class Register extends Component {
   render() {
     const { username, email, password } = this.state;
     return (
-      <>
-        <div className="login-outerframe">
-          <form
-            className="login-form"
+      <div className="register-outerframe">
+        <div className="register-form-frame">
+          <form className="register-form"
             onSubmit={(e) => {
               e.preventDefault();
-              this.props.handleRegister(this.state);
+              this.props.handleLogin(this.state);
               this.props.history.push('/');
-            }}
-          >
-            <h3 className="login-form-title">Register</h3>
-            <div className="login-div">
-              <label className="username" htmlFor="username">
+            }}>
+            <h3 className="register-title">Register</h3>
+            <div className="register-nameAndvalue">
+              <label className="register_username" htmlFor="username">
                 username:{' '}
               </label>
               <input
-                className="login-input"
-                id="username"
+                className="register-input"
+                id="register-username"
                 type="text"
                 name="username"
                 value={username}
                 onChange={this.handleChange}
               />
             </div>
-
-            <div className="login-div">
-              <label className="email" htmlFor="email">
+            <div className="register-nameAndvalue">
+              <label className="register-email" htmlFor="email">
                 email:{' '}
               </label>
               <input
-                className="login-input"
-                id="email"
+                className="register-input"
+                id="register-email"
                 type="text"
                 name="email"
                 value={email}
                 onChange={this.handleChange}
               />
             </div>
-
-            <div className="login-div">
-              <label className="password" htmlFor="password">
+            <div className="register-nameAndvalue">
+              <label className="register_password" htmlFor="password">
                 password:{' '}
               </label>
               <input
-                className="login-input"
-                id="password"
+                className="register-input"
+                id="register-password"
                 type="password"
                 name="password"
                 value={password}
                 onChange={this.handleChange}
               />
             </div>
-
-            <div className="login-button-frame">
-              <button className="login-button">Submit</button>
+            <div className="register-button-frame">
+              <button className="register-button">Submit</button>
             </div>
           </form>
         </div>
-      </>
+      </div>
     );
   }
 }

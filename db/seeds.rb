@@ -16,9 +16,9 @@ p "#{User.count} user(s) created"
 
 
 @salads = Category.create!(group: "salads", image: "https://www.eatright.org/-/media/eatrightimages/food/planningandprep/snackandmealideas/healthysaladingredients-598567824.jpg", group_id: "1")
-@pasta = Category.create!(group: "pasta", image: "https://images.immediate.co.uk/production/volatile/sites/2/2015/06/11540.jpg", group_id: "2")
-@dinner = Category.create!(group: "dinner", image: "https://images-gmi-pmc.edge-generalmills.com/7d6f3a8e-2eca-4c61-8988-489b40546395.jpg", group_id: "3")
-@dessert = Category.create!(group: "dessert", image: "https://assets.kraftfoods.com/recipe_images/opendeploy/204595_640x428.jpg", group_id: "4")
+@dinner = Category.create!(group: "dinner", image: "https://www.simplyorganic.com/community/images/made/bf57b6a338206c8d/Simply-Organic-entree-seafood-600x600_630_630_s_c1.jpg", group_id: "2")
+@pasta = Category.create!(group: "pasta", image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/spaghetti-puttanesca_1.jpg", group_id: "3")
+@dessert = Category.create!(group: "dessert", image: "https://honestcooking.com/wp-content/uploads/2015/02/strawberry_blueberry_napoleons_646.jpg", group_id: "4")
 # @dessert = Category.create!(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
 
 p "#{Category.count} category created"
@@ -30,7 +30,7 @@ prep_time: "1 hour",
 ingredient: "1/4 cup olive oil 2 tablespoons soy sauce  2 tablespoons rice vinegar 2 tablespoons sesame oil 2 tablespoons brown sugar  2 cloves garlic, pressed  1 tablespoon grated fresh ginger  1 tablespoon sesame seeds  4 green onions, thinly sliced  4 (5-ounce) salmon filets
 #   FOR THE HONEY GINGER GLAZE  2 tablespoons honey  1 teaspoon soy sauce  1 teaspoon sesame oil  1/2  teaspoon Sriracha, or more, to taste   1/2 teaspoon grated fresh ginger   1/2 teaspoon sesame seeds",
 direction: "DIRECTIONS:  To make the glaze, whisk together honey, soy sauce, sesame oil, Sriracha, ginger and sesame seeds in a small bowl; set aside. In a medium bowl, whisk together olive oil, soy sauce, rice vinegar, sesame oil, brown sugar, garlic, ginger, sesame seeds and green onions.  In a gallon size Ziploc bag or large bowl, combine ginger marinade and salmon filets; marinate for at least 30 minutes to overnight, turning the bag occasionally.  Preheat oven to 400 degrees F. Lightly coat a 9×13 baking dish with nonstick spray.  Place salmon filets along with the marinade onto prepared baking dish and bake until the fish flakes easily with a fork, about 20 minutes.  Serve salmon immediately with honey ginger glaze.",
-story: "my story",
+story: "my story......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 group_id: "1",
 popular: "1",
 user: @user,
@@ -43,7 +43,7 @@ image:"https://www.kroger.com/asset/594048c7bae8a2517539b915?data=1",
 prep_time: "2 hour",
 ingredient: "2 lbs. stewing beef, cut into cubes 1 tsp. salt ¼ tsp. freshly ground black pepper  1/4 cup shortening  4 cups boiling water  1 Tbsp. lemon juice  1 Tbsp. Worcestershire sauce 1 tsp. sugar  1 large onion, peeled and sliced  2 bay leaves  1/4 tsp. allspice 12 small carrots, peeled and coarsely chopped 8 small white onions, trimmed, peeled, and halved 8 small new potatoes, peeled and coarsely chopped", 
 direction: "Season the beef with salt and pepper. In a soup pot, melt the shortening on high heat. When the fat is very hot, add as many of the beef cubes to the pan as you can without crowding them, and brown on all sides; remove with a slotted spoon and set aside; repeat this process until all the beef is browned. Return all the meat to the soup pot and add the boiling water. Stir in the lemon juice, Worcestershire sauce, sugar, onion, bay leaves, and allspice. Reduce the heat to low, cover, and simmer for about 2 hours, until the meat is tender. Add the carrots, onions, and potatoes; cover and cook for about 20 to 25 minutes, until the vegetables can be pierced easily with a fork. Discard the bay leaves before serving.",
-story: "my story",
+story: "my story....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 group_id: "1",
 popular: "1",
 user: @user,
@@ -74,7 +74,7 @@ ingredient: "For Cajun Seasoning:
   # While chicken is resting, make the sauce.
   # Reduce heat to medium. Melt remaining butter in the pan. Sauté garlic until fragrant (about 30 seconds), while scraping up any browned bits from the pan. Pour in the broth and let reduce for 2-3 minutes, while stirring occasionally.
   # Take the pan off the heat. Drizzle sauce over the chicken. Serve warm..",
-story: "my story",
+story: "my story....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 group_id: "1",
 popular: "1",
 user: @user,
@@ -101,7 +101,7 @@ Preheat oven to 325°F. Lightly butter 9-inch-diameter springform pan with 2 3/4
 For filling:
 Puree mangoes in processor until smooth. Set aside 2 cups mango puree (reserve any remaining puree for another use). Beat cream cheese, sugar, and vanilla in large bowl until smooth. Add eggs 1 at a time, beating well after each addition. Add 2 cups mango puree and beat until well blended. Pour filling over crust in pan.
 Bake cake until set and puffed and golden around edges (center may move very slightly when pan is gently shaken), about 1 hour 25 minutes. Cool cake 1 hour. Refrigerate uncovered overnight. Run small knife between cake and sides of pan to loosen. Remove pan sides. Transfer cake to platter. Cut into wedges and serve with sliced mangoes.", 
-story: "my story",
+story: "my story......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 group_id: "2",
 popular: "1",
 user: @user,
@@ -141,7 +141,7 @@ ingredient: "MACARONS
   Transfer the buttercream to a piping bag fitted with a round tip.
   Add a dollop of buttercream to one macaron shell. Top it with another macaron shell to create a sandwich. Repeat with remaining macaron shells and buttercream.
   Place in an airtight container for 24 hours to “bloom", 
-story: "my story",
+story: "my story......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 group_id: "2",
 popular: "1",
 user: @user,
