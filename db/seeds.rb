@@ -148,6 +148,26 @@ popular: "1",
 user: @user,
 category: @dessert,
 )
+
+@r = Recipe.create!(
+name: "Chocolate Chocolate",
+image:"https://www.tasteofhome.com/wp-content/uploads/2018/01/Chocolate-Chip-Cookie-Delight_EXPS_SCMBZ19_36007_C01_24_6b-3-1024x1024.jpg",
+prep_time: "1 hour",
+ingredient: "1 tube (16-1/2 ounces) refrigerated chocolate chip cookie dough
+1 package (8 ounces) cream cheese, softened
+1 cup confectioners' sugar
+1 carton (12 ounces) frozen whipped topping, thawed, divided",
+direction: "Preheat oven to 400°F. On a large baking sheet, toss shrimp with oil and season with salt and pepper. 
+Bake until shrimp are completely opaque, 5 to 7 minutes. 
+In a large bowl, whisk together mayonnaise, lemon juice and zest, and dijon and season with salt and pepper. Add cooked shrimp, red onion, celery, and dill to bowl and toss until combined. 
+Serve on bread or over lettuce. ",
+story: "my story....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+group_id: "4",
+popular: "0",
+user: @user,
+category: @dessert,
+)
+
 @r = Recipe.create!(
 name: "Airy Cheese Souffle",
 image:"https://www.thespruceeats.com/thmb/zzAsu8mrawR0ZTuzsDonemgCpvg=/3435x2576/smart/filters:no_upscale()/cheese-souffle-643637388-5ac273aaff1b780037982f9a.jpg",
@@ -167,6 +187,7 @@ popular: "0",
 user: @user,
 category: @dessert,
 )
+
 
 
 @r1 = Recipe.create!(
