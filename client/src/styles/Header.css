@@ -80,7 +80,9 @@
   height: 1.5em;
   border-radius: 8px;
   border-color: #1abfe0;
-  color: #1abfe0;
+  color: #fff;
+  background-color: #1abfe0;
+  /* color: #1abfe0; */
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1em;

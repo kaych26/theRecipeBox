@@ -43,15 +43,15 @@
 .signon-button-frame {
   padding-top: 30px;
   text-align: center;
-
 }
 
 .signon-button {
   height: 35px;
   width: 130px;
   border-radius: 8px;
-  border-color: #1abfe0;
-  color: #1abfe0;
+  border-color: #292727;
+  background-color: #1abfe0;
+  color: #292727;
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.2em;
@@ -59,15 +59,16 @@
 }
 
 .signon-button:hover {
+  /* color: #fff;
+  background-color: #1abfe0; */
   color: #fff;
   background-color: #1abfe0;
+  border: #1abfe0;
 }
 @media only screen and (max-width: 768px) {
- 
 }
 
 @media only screen and (max-width: 414px) {
-
   .signon-outerframe {
     background-image: url('../assets/images/img/hero_login_small.png');
     height: 510px;
@@ -89,5 +90,3 @@
     text-align: center;
   }
 }
-
-

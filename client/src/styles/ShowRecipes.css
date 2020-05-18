@@ -7,18 +7,40 @@
   background-size: cover;
   position: relative;
 }
+.showrecipe-add-frame {
+  text-align: center;
+  padding-top: 2em;
+}
 
-.showrecipes-title-frame {
+.showrecipe-add-button {
+  height: 35px;
+  width: 350px;
+  border-radius: 8px;
+  color: #fff;
+
+  background-color: #1abfe0;
+  border-color: #1abfe0;
+  cursor: pointer;
+  font-family: 'Caveat', cursive;
+  /* font-family: 'Annie Use Your Telescope', cursive; */
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+}
+
+.showrecipe-add-button:hover {
+  /* border: 2px solid #1abfe0; */
+ 
+  color: #292727;
+ 
 }
 
 .showrecipes-cat-name {
   color: #292727;
   text-align: center;
   height: 60px;
-  /* padding: 40px; */
   font-size: 2.8em;
   text-transform: capitalize;
-  padding: 1em 0 0 0;
+  padding: .5em 0 0 0;
 }
 
 .showrecipes-wrapframe {
