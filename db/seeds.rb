@@ -15,7 +15,7 @@ User.destroy_all
 p "#{User.count} user(s) created"
 
 
-@salads = Category.create!(group: "salads", image: "https://www.vegetarianrecipesmag.com/images/made/images/uploads/recipe-uploads/Pear,_Brie_and_Pecan_Salad_RESIZED_700_534_84_int_c1.jpg", group_id: "1")
+@salad = Category.create!(group: "salad", image: "https://www.vegetarianrecipesmag.com/images/made/images/uploads/recipe-uploads/Pear,_Brie_and_Pecan_Salad_RESIZED_700_534_84_int_c1.jpg", group_id: "1")
 @dinner = Category.create!(group: "dinner", image: "https://static01.nyt.com/images/2016/02/17/dining/17COOKING-CITRUSCHICKEN1/17COOKING-CITRUSCHICKEN1-articleLarge.jpg", group_id: "2")
 @pasta = Category.create!(group: "pasta", image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/spaghetti-puttanesca_1.jpg", group_id: "3")
 @dessert = Category.create!(group: "dessert", image: "https://honestcooking.com/wp-content/uploads/2015/02/strawberry_blueberry_napoleons_646.jpg", group_id: "4")
@@ -146,6 +146,47 @@ group_id: "2",
 popular: "1",
 user: @user,
 category: @dessert,
+)
+
+@r1 = Recipe.create!(
+name: "Fettuccine Tomatoes & Crispy Capers",
+image:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2013%2F10%2FHD-200807-r-fettuccine-capers.jpg",
+prep_time: "1 hour",
+ingredient: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+story: "my story......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+group_id: "1",
+popular: "0",
+user: @user,
+category: @pasta,
+)
+
+@r = Recipe.create!(
+name: "Shrimp Salad",
+image:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shrimpsaladhorizontal-jpg-1523571377.jpg",
+prep_time: "1 hour",
+ingredient: "INGREDIENTS
+FOR SALAD
+1 lb. shrimp, peeled and deveined
+1 tbsp. extra-virgin olive oil
+Kosher salt
+Freshly ground black pepper
+1/4 red onion, finely chopped
+1 stalk celery, finely chopped
+2 tbsp. freshly chopped dill
+Toasted bread or butterhead or romaine lettuce, for serving
+FOR DRESSING
+1/2 c. mayonnaise
+Juice and zest of 1 lemon
+1 tsp. dijon mustard", 
+direction: "Preheat oven to 400°F. On a large baking sheet, toss shrimp with oil and season with salt and pepper. 
+Bake until shrimp are completely opaque, 5 to 7 minutes. 
+In a large bowl, whisk together mayonnaise, lemon juice and zest, and dijon and season with salt and pepper. Add cooked shrimp, red onion, celery, and dill to bowl and toss until combined. 
+Serve on bread or over lettuce. ",
+story: "my story....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+group_id: "1",
+popular: "0",
+user: @user,
+category: @salad,
 )
 
 

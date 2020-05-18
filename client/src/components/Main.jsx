@@ -150,6 +150,44 @@ export default class Main extends Component {
             );
           }}
         />
+        <Route
+          exact
+          path="/salad"
+          render={(routerProps) => {
+            const recipe = this.state.categories.find(
+              (cat) => cat.group === 'salad'
+            );
+            const recipeId = recipe && recipe.id;
+            return (
+              <ShowRecipes
+                category="dessert"
+                recipes={this.state.recipes.filter(
+                  (recipe) => recipe.category_id === recipeId
+                )}
+                currentUser={this.props.currentUser}
+              />
+            );
+          }}
+        />
+        <Route
+          exact
+          path="/pasta"
+          render={(routerProps) => {
+            const recipe = this.state.categories.find(
+              (cat) => cat.group === 'pasta'
+            );
+            const recipeId = recipe && recipe.id;
+            return (
+              <ShowRecipes
+                category="dessert"
+                recipes={this.state.recipes.filter(
+                  (recipe) => recipe.category_id === recipeId
+                )}
+                currentUser={this.props.currentUser}
+              />
+            );
+          }}
+        />
 
         <Route
           exact
