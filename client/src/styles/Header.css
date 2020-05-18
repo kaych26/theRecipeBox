@@ -27,7 +27,10 @@
   height: 1.8em;
   border-radius: 8px;
   border-color: #1abfe0;
-  color: #1abfe0;
+  background-color: #1abfe0;
+  color: #fff;
+  /* border-color: #1abfe0;
+  color: #1abfe0; */
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.2em;
@@ -35,8 +38,7 @@
 }
 
 .header-button:hover {
-  color: #fff
-  ;
+  color: #292727;
   background-color: #1abfe0;
 }
 

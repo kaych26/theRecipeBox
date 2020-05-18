@@ -49,9 +49,9 @@
   height: 35px;
   width: 130px;
   border-radius: 8px;
-  border-color: #292727;
+  border-color: #1abfe0;
   background-color: #1abfe0;
-  color: #292727;
+  color: #fff;
   cursor: pointer;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.2em;
@@ -61,7 +61,7 @@
 .signon-button:hover {
   /* color: #fff;
   background-color: #1abfe0; */
-  color: #fff;
+  color: #292727;
   background-color: #1abfe0;
   border: #1abfe0;
 }
