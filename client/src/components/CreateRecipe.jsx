@@ -29,6 +29,7 @@ export default class CreateRecipe extends Component {
   handleSelect = (e) => {
     this.setState({
       category_id: e.target.value,
+  
     });
   };
   render() {
@@ -54,7 +55,11 @@ export default class CreateRecipe extends Component {
             e.preventDefault();
 
             this.props.handleRecipeSubmit(this.state);
-            this.props.history.push('/');
+            this.props.history.goBack();
+
+            // this.props.history.push(`/${this.state.category_group}`);
+
+            // this.props.history.push('/');
           }}
         >
           <label className="create-form-label" htmlFor="image">
