@@ -103,7 +103,7 @@ For filling:
 Puree mangoes in processor until smooth. Set aside 2 cups mango puree (reserve any remaining puree for another use). Beat cream cheese, sugar, and vanilla in large bowl until smooth. Add eggs 1 at a time, beating well after each addition. Add 2 cups mango puree and beat until well blended. Pour filling over crust in pan.
 Bake cake until set and puffed and golden around edges (center may move very slightly when pan is gently shaken), about 1 hour 25 minutes. Cool cake 1 hour. Refrigerate uncovered overnight. Run small knife between cake and sides of pan to loosen. Remove pan sides. Transfer cake to platter. Cut into wedges and serve with sliced mangoes.", 
 story: "my story......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-group_id: "2",
+group_id: "4",
 popular: "1",
 user: @user,
 category: @dessert,
@@ -143,11 +143,31 @@ ingredient: "MACARONS
   Add a dollop of buttercream to one macaron shell. Top it with another macaron shell to create a sandwich. Repeat with remaining macaron shells and buttercream.
   Place in an airtight container for 24 hours to “bloom", 
 story: "my story......Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-group_id: "2",
+group_id: "4",
 popular: "1",
 user: @user,
 category: @dessert,
 )
+@r = Recipe.create!(
+name: "Airy Cheese Souffle",
+image:"https://www.thespruceeats.com/thmb/zzAsu8mrawR0ZTuzsDonemgCpvg=/3435x2576/smart/filters:no_upscale()/cheese-souffle-643637388-5ac273aaff1b780037982f9a.jpg",
+prep_time: "1 hour",
+ingredient: "1 1/2 tablespoons unsalted butter
+1 1/2 tablespoons flour
+1/2 cup milk (whole)
+2 eggs ( separated )
+1/4 to 1/3 cup any type of cheese ( grated )",
+direction: "Preheat oven to 400°F. On a large baking sheet, toss shrimp with oil and season with salt and pepper. 
+Bake until shrimp are completely opaque, 5 to 7 minutes. 
+In a large bowl, whisk together mayonnaise, lemon juice and zest, and dijon and season with salt and pepper. Add cooked shrimp, red onion, celery, and dill to bowl and toss until combined. 
+Serve on bread or over lettuce. ",
+story: "my story....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+group_id: "4",
+popular: "0",
+user: @user,
+category: @dessert,
+)
+
 
 @r1 = Recipe.create!(
 name: "Fettuccine Tomatoes & Crispy Capers",

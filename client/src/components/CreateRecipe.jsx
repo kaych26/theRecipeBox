@@ -58,7 +58,6 @@ export default class CreateRecipe extends Component {
             this.props.history.goBack();
 
             // this.props.history.push(`/${this.state.category_group}`);
-
             // this.props.history.push('/');
           }}
         >

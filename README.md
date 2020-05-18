@@ -69,20 +69,20 @@ Frontend Deployment - Netlify
 
 ### Component Breakdown
 
-| Component          | Type       | State | Props | Description                                                                                            |
-| ------------------ | ---------- | ----- | ----- | ------------------------------------------------------------------------------------------------------ |
-| Header             | functional | N     | Y     | The header will contain the logo and login button. The user name will be passed into header via props. |
-| Main               | class      | Y     | Y     | The main will store/track the API recipe data and render the sections.                                 |
-| HeroSection        | functional | N     | N     | The section rendering the hero image.                                                                  |
-| PopularSection     | functional | N     | Y     | The section rendering images of the popular recipes.                                                   |
-| JoinSection        | functional | N     | Y     | The section for user login and register buttons.                                                       |
-| CatagorySection    | functional | N     | Y     | The section to render the recipe catagories for user to click into.                                    |
-| ShowRecipeList     | functional | N     | Y     | Render the list of recipes with only image and name                                                    |
-| ShowOneRecipe      | functional | N     | Y     | Render one recipe with all details                                                                     |
-| Login              | functional | N     | Y     | User login, calling the method passed via props                                                        |
-| Register           | functional | N     | Y     | Create new user, calling the method passed via props                                                   |
-| CreateRecipe       | functional | N     | Y     | Create new recipe                                                                                      |
-| UpdateDeleteRecipe | functional | N     | Y     | Allow user to update the recipe and story                                                              |
+| Component      | Type       | State | Props | Description                                                                                            |
+| -------------- | ---------- | ----- | ----- | ------------------------------------------------------------------------------------------------------ |
+| Header         | functional | N     | Y     | The header will contain the logo and login button. The user name will be passed into header via props. |
+| Main           | class      | Y     | Y     | The main will store/track the API recipe data and render the sections.                                 |
+| Hero           | functional | N     | N     | The section rendering the hero image.                                                                  |
+| Popular        | functional | N     | Y     | The section rendering images of the popular recipes.                                                   |
+| Join           | functional | N     | Y     | The section for user login and register buttons.                                                       |
+| ShowCategories | functional | N     | Y     | The section to render the recipe catagories for user to click into.                                    |
+| ShowRecipes    | functional | N     | Y     | Render the list of recipes with only image and name                                                    |
+| OneRecipe      | functional | N     | Y     | Render one recipe with all details                                                                     |
+| SignIn         | class      | Y     | Y     | User login, calling the method passed via props                                                        |
+| Register       | class      | Y     | Y     | Create new user, calling the method passed via props                                                   |
+| CreateRecipe   | class      | Y     | Y     | Create new recipe                                                                                      |
+| UpdateRecipe   | class      | Y     | Y     | Allow user to update the recipe and story                                                              |
 
 ## Server
 
@@ -122,8 +122,15 @@ Back End: The Server will be developed using Rails
 
 ## Functions
 
+Check if login user is the owner of the recipe to do update or delete.</br>
+After creating the recipe, should redirect to display the uploaded recipe instead of going back to home.</br>
+Add menu button at header to include about, add, update, faq options </br>
+Add back button feature </br>
+The add recipe form: user to list the ingredient and instruction instead of paragraph.
+The add recipe form: allow to update each section instead just having one edit option for whole form
 Allow logged in users to give star rating for the recipes.</br>
 The popular recipe section to use the highest rated recipes </br>
+List recipes by the user </br>
 Allow user to bookmark their favorite recipes.</br>
 The search function.</br>
 
