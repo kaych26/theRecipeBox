@@ -11,6 +11,7 @@ Category.destroy_all
 User.destroy_all
 
 @user = User.create(username:"Annie", email: "Annie@m.com", password: "123456")
+@user2 = User.create(username:"Adam", email: "Adam@m.com", password: "123456")
 # User.create(username:"admin", email: "admin@mail.com", password: "123456")
 p "#{User.count} user(s) created"
 
