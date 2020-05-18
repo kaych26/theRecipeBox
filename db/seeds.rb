@@ -210,6 +210,26 @@ user: @user,
 category: @salad,
 )
 
+@r = Recipe.create!(
+name: "Block Island Lobster Salad",
+image:"2wCEAAkGBxMTEhUTExMWFRUWGCAaGRcYGBkbHhsfIBgdFx0gHiAdHSgiHSInHR4dIjEhJSkrLy4uHh8zODMsNygtLi0BCgoKDg0OGxAQGy0mHyYvLS0yNy8rLS0tLzUvLS0tLS0wLS0tLS0tLS0tLS0tNi0tLy0tLS0tLS0tLS0tKy0tLf",
+prep_time: "1 hour",
+ingredient: "INGREDIENTS
+1 small shallot, finely chopped
+2 tablespoons mayonnaise
+1 tablespoon fresh orange juice
+2 teaspoons finely chopped fresh tarragon
+2 tablespoons olive oil, plus more for drizzling", 
+direction: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+story: "my story....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+group_id: "1",
+popular: "0",
+user: @user,
+category: @salad,
+)
+
+
+
 
 p "#{Recipe.count} recipes created"
 
