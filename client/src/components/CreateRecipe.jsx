@@ -123,7 +123,10 @@ export default class CreateRecipe extends Component {
             value={this.state.story}
             onChange={this.handleChange}
           />
-          <button>Submit</button>
+          <div className="create-savebutton-frame">
+          
+          <button className="create-button">SAVE</button>
+        </div>
         </form>{' '}
       </div>
     );

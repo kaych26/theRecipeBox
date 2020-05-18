@@ -9,7 +9,7 @@
 }
 .createrecipe-title {
   font-size: 2.5em;
-  color: hsl(190, 79%, 49%);
+  color: #292727;
   text-align: center;
   padding: 0.5em 0;
 }
@@ -25,7 +25,7 @@
 }
 
 .create-form-frame {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,10 +35,10 @@
   font-size: 1.5em;
 }
 .create-input {
-  width: 550px;
+  width: 650px;
   font-family: 'Annie Use Your Telescope', cursive;
   letter-spacing: 0.1em;
-  font-size: 1.4em;
+  font-size: 1.3em;
   border-radius: 10px;
   padding-left: .5em;
   letter-spacing: .1em;
@@ -46,12 +46,34 @@
 }
 
 .create-input-multi {
-  width: 550px;
+  width: 650px;
   font-family: 'Annie Use Your Telescope', cursive;
-  height: 300px;
-  font-size: 1.4em;
+  height: 250px;
+  font-size: 1.3em;
   border-radius: 10px;
   padding: .5em;
   letter-spacing: .1em;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.create-savebutton-frame {
+  padding-top: 2em;
+}
+
+.create-button {
+  height: 35px;
+  width: 130px;
+  border-radius: 8px;
+  border-color: #292727;
+  color: #292727;
+  cursor: pointer;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.create-button:hover {
+  color: #fff;
+  background-color: #1abfe0;
+  border-color: #1abfe0
 }

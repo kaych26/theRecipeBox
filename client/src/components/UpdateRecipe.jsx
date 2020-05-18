@@ -46,9 +46,15 @@ export default class UpdateRecipe extends Component {
   render() {
     return (
       <div className="updaterecipe-outerframe">
-        <h3>Update Food</h3>
+        <h3 className="updaterecipe-title">Update Food</h3>
+        <div className="updaterecipe-img">
+
         <img src={this.state.image} width="300px" height="250px" className="updaterecipe-img"/>
-        <form id="update_form"
+        </div>
+   
+        <form
+          className="update-form-frame"
+          id="update_form"
           onSubmit={(e) => {
             e.preventDefault();
             this.props.handleRecipeUpdate(this.state.id, this.state);
@@ -56,51 +62,76 @@ export default class UpdateRecipe extends Component {
            
           }}
         >
+          <label className="update-form-label" htmlFor="image">
+            image url:{' '}
+          </label>
           <input
+            className="update-input"
             id="update_image"
             type="text"
             name="image"
             value={this.state.image}
             onChange={this.handleChange}
           />
+          <label className="update-form-label" htmlFor="name">
+            recipe name:{' '}
+          </label>
           <input
+            className="update-input"
             id="update_name"
             type="text"
             name="name"
             value={this.state.name}
             onChange={this.handleChange}
           />
-
+<label className="update-form-label" htmlFor="prep_time">
+            prep time:{' '}
+          </label>
           <input
+            className="update-input"
             id="update_prep_time"
             type="text"
             name="prep_time"
             value={this.state.prep_time}
             onChange={this.handleChange}
           />
-          <input
+          <label className="update-form-label" htmlFor="ingredient">
+            ingredient:{' '}
+          </label>
+          <textarea
+            className="update-input-multi"
             id="update_ingredient"
             type="text"
             name="ingredient"
             value={this.state.ingredient}
             onChange={this.handleChange}
           />
-          <input
+          <label className="update-form-label" htmlFor="direction">
+            direction{' '}
+          </label>
+          <textarea
+            className="update-input-multi"
             id="update_direction"
             type="text"
             name="direction"
             value={this.state.direction}
             onChange={this.handleChange}
           />
-                    <input
+          <label className="update-form-label" htmlFor="story">
+            tell your story:{' '}
+          </label>
+          <textarea
+            className="update-input-multi"
             id="update_story"
             type="text"
             name="story"
             value={this.state.story}
             onChange={this.handleChange}
           />
-
-          <button>Submit</button>
+          <div className="update-savebutton-frame">
+            
+          <button className="update-button">SAVE</button>
+</div>
         </form>
       </div>
     );
