@@ -1,21 +1,27 @@
 .createrecipe-outerframe {
   margin-top: 60px;
+  background-image: url('../assets/images/img/hero_long_img.png');
+  height: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .createrecipe-title {
   font-size: 2.5em;
-  color: #1abfe0;
+  color: hsl(190, 79%, 49%);
   text-align: center;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .create-select-frame {
   text-align: center;
 }
-.create-select {
+
+.createrecipe-select {
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 1.2em;
   letter-spacing: 0.1em;
-
 }
 
 .create-form-frame {
@@ -28,8 +34,24 @@
 .create-form-label {
   font-size: 1.5em;
 }
-.update-input {
+.create-input {
+  width: 550px;
   font-family: 'Annie Use Your Telescope', cursive;
   letter-spacing: 0.1em;
-  font-size: 1.3em;
+  font-size: 1.4em;
+  border-radius: 10px;
+  padding-left: .5em;
+  letter-spacing: .1em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.create-input-multi {
+  width: 550px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  height: 300px;
+  font-size: 1.4em;
+  border-radius: 10px;
+  padding: .5em;
+  letter-spacing: .1em;
+  background-color: rgba(255, 255, 255, 0.8);
 }

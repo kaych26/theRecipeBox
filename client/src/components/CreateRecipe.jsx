@@ -37,10 +37,11 @@ export default class CreateRecipe extends Component {
         {this.props.currentUser && this.assignUserId}
         <h3 className="createrecipe-title">Create Recipe </h3>
         <div className="create-select-frame">
-          <select onChange={this.handleSelect} className="create-select">
+          <select onChange={this.handleSelect} className="createrecipe-select">
             <option>Select a Category</option>
             {this.props.categories.map((category) => (
-              <option key={category.id} value={category.id} >
+              
+              <option key={category.id} value={category.id}>
                 {category.group}
               </option>
             ))}
@@ -60,8 +61,8 @@ export default class CreateRecipe extends Component {
             image url:{' '}
           </label>
           <input
-            className="update-input"
-            id="update_image"
+            className="create-input"
+            id="create_image"
             type="text"
             name="image"
             value={this.state.image}
@@ -71,8 +72,8 @@ export default class CreateRecipe extends Component {
             recipe name:{' '}
           </label>
           <input
-            className="update-input"
-            id="update_name"
+            className="create-input"
+            id="create_name"
             type="text"
             name="name"
             value={this.state.name}
@@ -82,8 +83,8 @@ export default class CreateRecipe extends Component {
             prep time:{' '}
           </label>
           <input
-            className="update-input"
-            id="update_prep_time"
+            className="create-input"
+            id="create_prep_time"
             type="text"
             name="prep_time"
             value={this.state.prep_time}
@@ -92,9 +93,9 @@ export default class CreateRecipe extends Component {
           <label className="create-form-label" htmlFor="ingredient">
             ingredient:{' '}
           </label>
-          <input
-            className="update-input"
-            id="update_ingredient"
+          <textarea
+            className="create-input-multi"
+            id="create_ingredient"
             type="text"
             name="ingredient"
             value={this.state.ingredient}
@@ -103,9 +104,9 @@ export default class CreateRecipe extends Component {
           <label className="create-form-label" htmlFor="direction">
             direction{' '}
           </label>
-          <input
-            className="update-input"
-            id="update_direction"
+          <textarea
+            className="create-input-multi"
+            id="create_direction"
             type="text"
             name="direction"
             value={this.state.direction}
@@ -114,9 +115,9 @@ export default class CreateRecipe extends Component {
           <label className="create-form-label" htmlFor="story">
             tell your story:{' '}
           </label>
-          <input
-            className="update-input"
-            id="update_story"
+          <textarea
+            className="create-input-multi"
+            id="create_story"
             type="text"
             name="story"
             value={this.state.story}
