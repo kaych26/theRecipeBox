@@ -1,9 +1,8 @@
-
 .onerecipe-outerframe {
   margin-top: 60px;
   background-image: url('../assets/images/img/hero_long_img.png');
   text-align: center;
-  height: 1300px;
+  height: 1500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,8 +16,8 @@
 }
 
 .onerecipe-title {
-  padding-top: .5em;
-  color:#292727;
+  padding-top: 0.5em;
+  color: #292727;
   font-size: 1.3em;
 }
 
@@ -40,11 +39,106 @@
 .onerecipe-p-font {
   border-radius: 25px;
   padding: 15px;
-  background-color: rgba(255,255,255, .4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
+.onerecipe-edit-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.onerecipe-edit-frame .edit-tip {
+  visibility: hidden;
+  width: 50px;
+  background-color: #fff;
+  color: #555;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 1.5em;
+
+  /* positon the edit msg */
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  left: 40%;
+  /* margin-left: -40px; */
+}
+
+.onerecipe-edit-frame .edit-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.onerecipe-edit-frame:hover .edit-tip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.onerecipe-edit-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 4em 2em;
+}
+
+/* --- delete icon---- */
+
+.onerecipe-delete-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.onerecipe-delete-frame .delete-tip {
+  visibility: hidden;
+  width: 50px;
+  background-color: #fff;
+  color: #555;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 1.5em;
+
+  /* positon the edit msg */
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  left: 40%;
+  /* margin-left: -40px; */
+}
+
+.onerecipe-delete-frame .delete-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.onerecipe-delete-frame:hover .delete-tip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.onerecipe-delete-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 4em 2em;
+}
+
+/* RESPONSIVE MEDIA  */
+
 @media only screen and (max-width: 768px) {
-  
 }
 
 @media only screen and (max-width: 414px) {
@@ -60,15 +154,13 @@
     font-size: 1.2em;
   }
 
-.onerecipe-ingredient,
-.onerecipe-direction,
-.onerecipe-story {
-  padding: 0px 18px;
-  font-size: 1.1em;
-}
-.onerecipe-p-font {
-  border-radius: 25px;
-  padding: 10px;
-  /* background-color: rgba(255,255,255, .4); */
-}
+  .onerecipe-ingredient,
+  .onerecipe-direction,
+  .onerecipe-story {
+    padding: 0px 18px;
+    font-size: 1.1em;
+  }
+  .onerecipe-p-font {
+    padding: 10px;
+  }
 }

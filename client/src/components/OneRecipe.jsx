@@ -3,6 +3,10 @@ import { Route, Link } from 'react-router-dom';
 import { getOneRecipe } from '../services/api-helper';
 import '../styles/Global.css';
 import '../styles/OneRecipe.css';
+import edit_icon from '../assets/images/img/edit_icon.png';
+import delete_icon from '../assets/images/img/delete_icon.png';
+
+// import recipe_box_img from '../assets/images/img/recipe_box_blue.png';
 
 export default class OneRecipe extends Component {
   state = {
@@ -15,7 +19,6 @@ export default class OneRecipe extends Component {
     group_id: '',
     user_id: '',
     category_id: '',
-  
   };
 
   componentDidMount() {
@@ -39,33 +42,9 @@ export default class OneRecipe extends Component {
 
   render() {
     const { recipe } = this.state;
-  
+
     return (
       <div className="onerecipe-outerframe">
-   
-        {/* {this.props.currentUser &&
-          <button
-            onClick={() => {
-              this.props.history.push(`/recipes/${recipe.id}/edit`);
-            }}
-          >
-            Edit
-          </button>
-        }
-
-        {this.props.currentUser &&
-          <button
-            onClick={() => {
-            this.props.handleRecipeDelete(`${recipe.id}`);
-            this.props.history.goBack();
-             
-            }}
-          >
-            Delete
-          </button>
-        } */}
-  
-      
         {recipe && (
           <>
             <div className="onerecipe-name-frame">
@@ -99,36 +78,60 @@ export default class OneRecipe extends Component {
           </>
         )}
 
+        {/* <div className="onerecipe-button-div>">
+          {this.props.currentUser && (
+            <button
+              onClick={() => {
+                this.props.history.push(`/recipes/${recipe.id}/edit`);
+              }}
+              className="onerecipe-edit-button"
+            >
+              Edit
+            </button>
+          )}
+        </div> */}
 
-        {this.props.currentUser &&
+        {/* <div className="onerecipe-button-div>"> */}
+        {/* {this.props.currentUser && (
           <button
             onClick={() => {
               this.props.history.push(`/recipes/${recipe.id}/edit`);
             }}
-          >
-            Edit
-          </button>
-        }
+            className="onerecipe-edit-button"
+          ></button>
+        )} */}
 
-        {this.props.currentUser &&
-          <button
-            onClick={() => {
-            this.props.handleRecipeDelete(`${recipe.id}`);
-            this.props.history.goBack();
-             
-            }}
-          >
-            Delete
-          </button>
-        }
+        {/* </div> */}
 
+        <div className="onerecipe-edit-frame">
+          {this.props.currentUser && (
+            <img
+              src={edit_icon}
+              alt="edit"
+              onClick={() => {
+                this.props.history.push(`/recipes/${recipe.id}/edit`);
+              }}
+              className="onerecipe-edit-icon"
+            />
+          )}
+          <span className="edit-tip">edit</span>
+        </div>
 
-
-
-
+        <div className="onerecipe-delete-frame">
+          {this.props.currentUser && (
+            <img
+              src={delete_icon}
+              alt="delete"
+              onClick={() => {
+                this.props.handleRecipeDelete(`${recipe.id}`);
+                this.props.history.goBack();
+              }}
+              className="onerecipe-delete-icon"
+            />
+          )}
+          <span className="delete-tip">delete</span>
+        </div>
       </div>
-
-
     );
   }
 }

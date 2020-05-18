@@ -15,8 +15,8 @@ User.destroy_all
 p "#{User.count} user(s) created"
 
 
-@salads = Category.create!(group: "salads", image: "https://www.eatright.org/-/media/eatrightimages/food/planningandprep/snackandmealideas/healthysaladingredients-598567824.jpg", group_id: "1")
-@dinner = Category.create!(group: "dinner", image: "https://www.simplyorganic.com/community/images/made/bf57b6a338206c8d/Simply-Organic-entree-seafood-600x600_630_630_s_c1.jpg", group_id: "2")
+@salads = Category.create!(group: "salads", image: "https://www.vegetarianrecipesmag.com/images/made/images/uploads/recipe-uploads/Pear,_Brie_and_Pecan_Salad_RESIZED_700_534_84_int_c1.jpg", group_id: "1")
+@dinner = Category.create!(group: "dinner", image: "https://static01.nyt.com/images/2016/02/17/dining/17COOKING-CITRUSCHICKEN1/17COOKING-CITRUSCHICKEN1-articleLarge.jpg", group_id: "2")
 @pasta = Category.create!(group: "pasta", image: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/spaghetti-puttanesca_1.jpg", group_id: "3")
 @dessert = Category.create!(group: "dessert", image: "https://honestcooking.com/wp-content/uploads/2015/02/strawberry_blueberry_napoleons_646.jpg", group_id: "4")
 # @dessert = Category.create!(group: "dessert", image: "https://www.dairyfoods.com/ext/resources/DF/2019/September/desserts/dfx0919-Outlook-img-open.jpg", group_id: "2")
