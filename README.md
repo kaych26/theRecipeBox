@@ -52,9 +52,9 @@ Frontend Deployment - Netlify
 
 ### Wireframes
 
-![WireframeHero](./readmeDoc/theRecipeBox_wireframe1b.png)
+![Wireframe](./readmeDoc/theRecipeBox_wireframe1b.png)
 </br>
-![WireframeHero](./readmeDoc/theRecipeBox_wireframe2.png)
+![Wireframe](./readmeDoc/theRecipeBox_wireframe2.png)
 </br>
 
 ### Client Directory
